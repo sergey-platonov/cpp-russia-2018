@@ -5,10 +5,10 @@
             <div class="buy-tickets-left row-col">
                 <a name="tickets" class="cpp-e_hash-link"></a>
                 <h2 class="cpp-e_block-title">
-                    Купить билет
+                    Билеты
                 </h2>
                 <div class="cpp-b_block-text">
-                    <p>Для тех, кто не может приехать<br>на конференцию, мы организовали<br>онлайн-трансляцию.  Присоединяйтесь!</p>
+                    <p>В этом году наших слушателей ждут<br> полезные мастерклассы, а для тех,<br> кто не может приехать на<br> конференцию, мы как всегда<br> организовали онлайн трансляцию. Присоединяйтесь!</p>
                 </div>
                 <div class="online">
                     <img src="/app/frontend/template/elem-buy-tickets.svg" alt="">
