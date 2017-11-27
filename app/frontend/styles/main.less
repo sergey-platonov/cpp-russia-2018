@@ -919,3 +919,62 @@ only screen and (min-device-width : 1366px) and (max-device-width : 1024px) and 
     font-size: 1.2vw;
   }
 }
+
+// price
+.price {
+  width: 100%;
+  margin-bottom: 60px;
+  padding-top: 1rem;
+  
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.375rem;
+    color: #4f4f4f;
+  }
+  
+  &__table {
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    table-layout: fixed;
+    background: #fff;
+  }
+  
+  &__table-row {
+    border-bottom: 1px solid;
+    
+    th {
+      padding: 1rem 1.3rem;
+      font-size: .938rem;
+      font-weight: 300;
+      line-height: 1.313rem;
+      
+      @media only screen and (orientation: portrait) and (max-device-width: 9in),
+             only screen and (orientation: landscape) and (max-device-width: 8in) {
+               padding: 1rem 0.3rem;
+             }
+    }
+    
+    td {
+      padding: 1rem 1.3rem;
+      font-size: .938rem;
+      font-weight: 700;
+      line-height: 1.313rem;
+      text-align: center;
+      
+      @media only screen and (orientation: portrait) and (max-device-width: 9in),
+             only screen and (orientation: landscape) and (max-device-width: 8in) {
+               padding: 1rem 0.3rem;
+             }
+      
+      &:first-child {
+        font-weight: 300;
+        color: #5fb12c;
+      }
+    }
+  }
+}
+// !price
