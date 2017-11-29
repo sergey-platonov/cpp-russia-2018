@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Конференция C++ Russia, 24-25 февраля 2017</title>
+    <title>Конференция C++ Russia, 19-21 апреля 2018</title>
     <?php partial("includes"); ?>
 </head>
 <body class="cpp-r main">
@@ -12,7 +12,7 @@
         <!-- -->
         <h1 class="cpp-e_page-title">
             Конференция C++ Russia,<br>
-            24-25 февраля 2017
+            19-21 апреля 2018
         </h1>
         <!-- -->
         <!-- -->
@@ -24,8 +24,7 @@
                         25
                     </div>
                     <div class="fact">
-                        лучших спикеров<br>
-                        из России и Европы
+                        лучших спикеров
                     </div>
                 </div>
                 <!-- -->

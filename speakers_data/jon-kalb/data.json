@@ -1,0 +1,12 @@
+{
+  "speaker": {
+    "name": "Jon Kalb"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "TRACK C",
+    "time": "10:00 - 12:00",
+    "title": "Keynote",
+    "colspan": 3
+  }
+}

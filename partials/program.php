@@ -18,54 +18,55 @@
         <div class="cpp-b_program-day">
         <div class="cpp-r_wrap">
             <div class="date">
-                23/02/17
+                19/04/18
             </div>
             <!-- Workshop prorgam table -->
+            <?php 
+              $ivanTitle = getWorkshopTitle("/workshops/ivan-cukic");
+              $rainerTitle = getWorkshopTitle("/workshops/rainer-grimm"); 
+              $pavelTitle = getWorkshopTitle("/workshops/pavel-filonov");
+            ?>
             <table>
                 <tbody>
                 <tr>
                     <th></th>
-                    <th><?php echo getWorkshopTitle("/workshops/ivan-cukic") ?></th>
-                    <th><?php echo getWorkshopTitle("/workshops/rainer-grimm") ?></th>
-                    <th><?php echo getWorkshopTitle("/workshops/pavel-filonov") ?></th>
-                    <th><?php echo getWorkshopTitle("/workshops/jetbrains") ?></th>
+                    <th><?php echo $ivanTitle ?></th>
+                    <th><?php echo $rainerTitle ?></th>
+                    <th><?php echo $pavelTitle ?></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
-                    <td colspan="4">Регистрация на мастер-классы</td>
+                    <td colspan="3">Регистрация на мастер-классы</td>
                 </tr>
                 <tr>
                     <td>10:00 - 12:00</td>
-                    <td>Applied functional programming in C++ I</td>
-                    <td>Embedded Programming with modern C++ I</td>
-                    <td>Continuous integration для C++ разработчика I</td>
-                    <td>Продуктивная кроссплатформенная разработка на C++ с использованием CLion</td>
+                    <td><?php echo $ivanTitle ?> I</td>
+                    <td><?php echo $rainerTitle ?> I</td>
+                    <td><?php echo $pavelTitle ?> I</td>
                 </tr>
                 <tr class="gray">
                     <td>12:00 - 12:45</td>
-                    <td colspan="4">Кофе-брейк</td>
+                    <td colspan="3">Кофе-брейк</td>
                 </tr>
                 <tr>
                     <td>12:45 - 14:45</td>
-                    <td>Applied functional programming in C++ II</td>
-                    <td>Embedded Programming with modern C++ II</td>
-                    <td>Continuous integration для C++ разработчика II</td>
-                    <td>CMake – билд-система, о которой должен знать каждый С++ разработчик</td>
+                    <td><?php echo $ivanTitle ?> II</td>
+                    <td><?php echo $rainerTitle ?> II</td>
+                    <td><?php echo $pavelTitle ?> II</td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
-                    <td colspan="4">Обед</td>
+                    <td colspan="3">Обед</td>
                 </tr>
                 <tr>
                     <td>16:00 - 18:00</td>
-                    <td>Applied functional programming in C++ III</td>
-                    <td>Embedded Programming with modern C++ III</td>
-                    <td>Continuous integration для C++ разработчика III</td>
-                    <td>Продуктивная разработка на C++ с использованием ReSharper C++</td>
+                    <td><?php echo $ivanTitle ?> III</td>
+                    <td><?php echo $rainerTitle ?> III</td>
+                    <td><?php echo $pavelTitle ?> III</td>
                 </tr>
                 <tr class="gray">
                     <td>18:00 - 20:00</td>
-                    <td colspan="4">Предрегистрация на конференцию</td>
+                    <td colspan="3">Предрегистрация на конференцию</td>
                 </tr>
                 </tbody>
             </table>

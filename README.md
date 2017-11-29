@@ -1,4 +1,4 @@
-# cpp-russia-2017
-C++ Russia 2017 Materials
+# cpp-russia-2018
+C++ Russia 2018 Materials
 
-http://2017.cppconf.ru/
+http://cppconf.ru/2018/

@@ -3,14 +3,14 @@
     "name": "Rainer Grimm"
   },
   "talk": {
-    "date": "24/02/17",
+    "date": "20/04/18",
     "track": "TRACK A",
     "time": "13:45 - 14:45",
-    "title": "Programming at compile time"
+    "title": "TBA"
   },
   "workshop": {
-    "date": "23/02/17",
+    "date": "19/04/18",
     "time": "9:00 - 20:00",
-    "title": "Embedded Programming with modern C++"
+    "title": "Multithreading with modern C++"
   }
 }

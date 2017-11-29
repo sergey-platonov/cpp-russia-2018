@@ -66,10 +66,19 @@ function getWorkshopTitle($dir)
     if (!$speakerData) {
 		return '';
     } else {
-        return '<a href="'.$dir.'">'.$speakerData->workshop->title.'</a>';
+        return $speakerData->workshop->title;
     }
 }
 
+function getWorkshopTitleWithLink($dir) 
+{
+	$title = getWorkshopTitle($dir);
+    if (!$title) {
+		return '';
+    } else {
+        return '<a href="'.$dir.'">'.$title.'</a>';
+    }
+}
 
 function getAllSpeakerData()
 {
