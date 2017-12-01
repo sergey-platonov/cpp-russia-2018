@@ -1,0 +1,1 @@
+Jonathan Boccara is passionate about C++ and in particular about writing expressive code. For this reason he has dedicated his blog, Fluent C++, to this topic. Jonathan is a senior developer at Murex, where he works on large financial C++ codebases. He also gives trainings on C++ every day in his company, in the short format called "Dailies". 
