@@ -68,8 +68,7 @@ function getWorkshopTitle($prefix, $dir)
     if (!$speakerData) {
 		return '';
     } else {
-        return $speakerData->workshop->title;
-        return '<a href="./'.$preifx.$dir.'">'.$speakerData->workshop->title.'</a>';
+        return '<a href="./'.$prefix.$dir.'">'.$speakerData->workshop->title.'</a>';
     }
 }
 
