@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Конференция C++ Russia, 19-21 апреля 2018</title>
-    <?php partial("includes"); ?>
+    <?php partial("includes", $GLOBALS["project_root"]); ?>
 </head>
 <body class="cpp-r main">
 <header class="cpp-r_header">
-    <?php partial("templates/header"); ?>
+    <?php partial("templates/header", $GLOBALS["project_root"]); ?>
     <div class="cpp-r_wrap">
         <!-- -->
         <h1 class="cpp-e_page-title">
@@ -49,6 +49,6 @@
     <?php require __DIR__."/pages/main.php"?>
 </main>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtxwRGTL4-AKlGJYKDVxzr_MymCP9XpLQ"></script>
-<?php partial("templates/footer"); ?>
+<?php partial("templates/footer", $GLOBALS["project_root"]); ?>
 </body>
 </html>

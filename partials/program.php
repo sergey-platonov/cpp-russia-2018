@@ -22,9 +22,9 @@
             </div>
             <!-- Workshop prorgam table -->
             <?php 
-              $ivanTitle = getWorkshopTitle("/workshops/ivan-cukic");
-              $rainerTitle = getWorkshopTitle("/workshops/rainer-grimm"); 
-              $pavelTitle = getWorkshopTitle("/workshops/pavel-filonov");
+              $ivanTitle = getWorkshopTitle($GLOBALS["prefix"], "/workshops/ivan-cukic");
+              $rainerTitle = getWorkshopTitle($GLOBALS["prefix"], "/workshops/rainer-grimm"); 
+              $pavelTitle = getWorkshopTitle($GLOBALS["prefix"], "/workshops/pavel-filonov");
             ?>
             <table>
                 <tbody>
@@ -73,6 +73,6 @@
             <!-- /Workshop prorgam table -->
         </div>
     </div>
-	<?php renderMainProgram(); ?>
+	<?php renderMainProgram($GLOBALS['project_root']); ?>
 </section>
 <!-- /Программа -->
