@@ -1,23 +1,39 @@
 <?php
 include ("./loader.php");
 
-$GLOBALS["prefix"] = basename(__DIR__);
 $GLOBALS['project_root'] = __DIR__;
 
 $router = new AltoRouter();
 // map homepage
-$router->map( 'GET',  '/[i:year]/', function($year) {
+function map_home($year) {
     require __DIR__ . '/main.php';
-});
+}
+
+$router->map( 'GET',  '/[i:year]/', map_home );
+$router->map( 'GET',  '/', map_home );
 
 // map all talks page
-$router->map( 'GET', '/[i:year]/talks', function($year) {
+function map_all_talks($year) {
+    if ($year)
+        $GLOBALS["prefix"] = '/' . basename(__DIR__);
+    else
+        $GLOBALS["prefix"] = '';
+
     $arrSpeakers = getAllSpeakerData(__DIR__)["speakers"];
     require __DIR__ . '/templates/talks.php';
-});
+}
+$router->map( 'GET', '/[i:year]/talks', map_all_talks );
+$router->map( 'GET', '/talks', map_all_talks );
 
 // map talk details page
-$router->map( 'GET', '/[i:year]/talks/[*:speaker]', function($year, $speaker) {
+function map_talk_details($year, $speaker) {
+    if (!$speaker) {
+        $speaker = $year;
+        $GLOBALS["prefix"] = '';
+    } else {
+        $GLOBALS["prefix"] = '/' . basename(__DIR__);
+    }
+
     $speakerData = getSpeakerDataByDirName($speaker);
     if (!$speakerData) {
         header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
@@ -25,10 +41,20 @@ $router->map( 'GET', '/[i:year]/talks/[*:speaker]', function($year, $speaker) {
     } else {
         require __DIR__ . '/templates/talk.php';
     }
-});
+}
+
+$router->map( 'GET', '/[i:year]/talks/[*:speaker]', map_talk_details );
+$router->map( 'GET', '/talks/[*:speaker]', map_talk_details );
 
 // map workshop details page
-$router->map( 'GET', '/[i:year]/workshops/[*:speaker]', function($year, $speaker) {
+function map_workshop_details($year, $speaker) {
+    if (!$speaker) {
+        $speaker = $year;
+        $GLOBALS["prefix"] = '';
+    } else {
+        $GLOBALS["prefix"] = '/' . basename(__DIR__);
+    }
+
     $speakerData = getSpeakerDataByDirName($speaker);
     if (!$speakerData) {
         header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
@@ -36,7 +62,10 @@ $router->map( 'GET', '/[i:year]/workshops/[*:speaker]', function($year, $speaker
     } else {
         require __DIR__ . '/templates/workshop.php';
     }
-});
+}
+
+$router->map( 'GET', '/[i:year]/workshops/[*:speaker]', map_workshop_details );
+$router->map( 'GET', '/workshops/[*:speaker]', map_workshop_details );
 
 // match current request url
 $match = $router->match();

@@ -31,7 +31,7 @@
 						else
 							$rowText .= '<td>';
 						if (!$data->system) {
-							$rowText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href="/'.$prefix.'/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a></td>'."\n";
+							$rowText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href=".'.$prefix.'/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a></td>'."\n";
 							$rows[$data->talk->track] = $rowText;
 						}
 						else {

@@ -13,7 +13,7 @@ if (window.google) {
     });
     let marker = new google.maps.Marker({
         map: map,
-        icon: "http://2017.cppconf.ru/app/frontend/template/google-marker.png",
+        icon: "http://cppconf.ru/2018/app/frontend/template/google-marker.png",
         position: position
     });
 }

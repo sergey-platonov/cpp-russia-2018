@@ -22,17 +22,17 @@ function getSpeakerDataByDirName($dir)
         if (!property_exists($jsonData, "system")) {
 			$jsonData->system = false;
 			if (property_exists($jsonData, "talk") && $jsonData->talk) 
-				$jsonData->talk->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/talk_description.md"));
+				$jsonData->talk->description = $Parsedown->text(file_get_contents($root . "speakers_data/" . $dirname . "/talk_description.md"));
 			
 				
 			if (property_exists($jsonData, "speaker") && $jsonData->speaker) {
-				$jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
+				$jsonData->speaker->about = $Parsedown->text(file_get_contents($root . "speakers_data/" . $dirname . "/speaker_about.md"));
 				$jsonData->speaker->images = glob("speakers_data/" . $dirname . "/*.{gif,jpg,png}", GLOB_BRACE);	
 				$jsonData->speaker->dirname = $dirname;
 			}
 
 			if (property_exists($jsonData, "workshop") && $jsonData->workshop)
-				$jsonData->workshop->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/workshop_description.md"));
+				$jsonData->workshop->description = $Parsedown->text(file_get_contents($root . "speakers_data/" . $dirname . "/workshop_description.md"));
 		}
 		if (property_exists($jsonData, "talk") && $jsonData->talk) 
 			$jsonData->talk->track = strtolower($jsonData->talk->track);

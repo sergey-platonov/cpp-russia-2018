@@ -66,7 +66,7 @@
                         (function() {
                             return {
                                 "loadCSS": [
-                                    "http://2017.cppconf.ru/app/build/css/timepad.css"
+                                    "<?php echo $GLOBALS["prefix"]?>/app/build/css/timepad.css"
                                 ],
                                 "skipBaseCSS": true,
                                 "disableBootstrap": true

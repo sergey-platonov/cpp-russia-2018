@@ -24,9 +24,10 @@
             </div>
             <div class="cpp-b_sidetext cpp-b_responsive-row-cols">
 				<div class="sidetext-left row-col">
+                <?php $prefix = $prefix ? $GLOBALS["prefix"] . "/" : ""?>
 				<?php if (count($speakerData->speaker->images)): ?>
                 <?php foreach ($speakerData->speaker->images as $filename): ?>
-                    <img src="/<?php echo $GLOBALS["prefix"].'/'.$filename; ?>" style="width: 15.938rem;">
+                    <img src="<?php echo $preifx . '../' . $filename; ?>" style="width: 15.938rem;">
                 <?php endforeach; ?>
                 <?php else: ?>
 					<img src=/"<?php echo $GLOBALS["prefix"];?>/speakers_data/photo.png" style="width: 15.938rem;">
