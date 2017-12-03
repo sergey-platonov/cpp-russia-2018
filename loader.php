@@ -124,7 +124,7 @@ function renderTalkTeaser($speaker)
 
 function renderTalkTeasers($arrSpeakers)
 {
-    foreach ($arrSpeakers as $speaker) {
+    foreach ($GLOBALS["speakers"] as $speaker) {
         renderTalkTeaser($speaker);
     }
 }
