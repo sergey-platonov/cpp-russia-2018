@@ -2,32 +2,32 @@
     <div class="talk-head">
         <div class="talk-date-track">
             <div class="date">
-                <?php echo $speakerData->talk->date; ?>
+                <?php echo $speaker->talk->date; ?>
             </div>
             <div class="track">
-                <?php echo ucwords($speakerData->talk->track); ?><br>
-                <?php echo $speakerData->talk->time; ?>
+                <?php echo ucwords($speaker->talk->track); ?><br>
+                <?php echo $speaker->talk->time; ?>
             </div>
         </div>
         <div class="talk-speaker-photo">
-            <img src="<?php echo $speakerData->speaker->images[0]; ?>" alt="<?php echo $speakerData->speaker->name; ?>">
+            <img src="<?php echo $speaker->speaker->images[0]; ?>" alt="<?php echo $speaker->speaker->name; ?>">
         </div>
     </div>
     <div class="talk-speaker-name">
-        <?php echo $speakerData->speaker->name; ?>
+        <?php echo $speaker->speaker->name; ?>
     </div>
     <div class="talk-content-fixed">
         <div class="talk-title">
             <div class="cpp-e_title-small">
-                <?php echo $speakerData->talk->title; ?>
+                <?php echo $speaker->talk->title; ?>
             </div>
         </div>
         <div class="talk-description">
-            <?php echo $speakerData->talk->description; ?>
+            <?php echo $speaker->talk->description; ?>
         </div>
     </div>
 
     <div class="talk-footer">
-        <a class="talk-link" href="<?php echo "/talks/".$speakerData->speaker->dirname; ?>">Подробнее >></a>
+        <a class="talk-link" href="<?php echo "/talks/".$speaker->speaker->dirname; ?>">Подробнее >></a>
     </div>
 </div>

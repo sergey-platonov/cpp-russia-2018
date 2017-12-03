@@ -2,6 +2,7 @@
 include ("./loader.php");
 
 $GLOBALS['project_root'] = __DIR__;
+$GLOBALS["speakers"] = getAllSpeakerData(__DIR__)["speakers"];
 
 $router = new AltoRouter();
 // map homepage
@@ -19,7 +20,6 @@ function map_all_talks($year) {
     else
         $GLOBALS["prefix"] = '';
 
-    $arrSpeakers = getAllSpeakerData(__DIR__)["speakers"];
     require __DIR__ . '/templates/talks.php';
 }
 $router->map( 'GET', '/[i:year]/talks', map_all_talks );

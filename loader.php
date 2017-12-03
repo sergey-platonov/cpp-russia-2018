@@ -104,15 +104,20 @@ function getAllSpeakerData($projectRoot)
 
 function renderTalkTeaser($speaker)
 {
-    $speakerData = $speaker;
-    
-    if (count($speakerData->speaker->images) == 0)
+    if (!$speaker->speaker || !$speaker->speaker->name) {
+        # print 'corrupted speaker object';
+        return false;
+    }
+    if (count($speaker->speaker->images) == 0) {
+        # print 'no images for ' . $speaker->speaker->name . '<br>';
 		return false;
+    }
 
     if ($speaker->talk->description) {
         require __DIR__ . '/templates/talk_teaser.php';
         return true;
-    } else { 
+    } else {
+        # print 'no talks description for ' . $speaker->speaker->name . '<br>';
 		return false;
 	}
 }

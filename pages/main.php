@@ -47,20 +47,27 @@
             <!-- -->
             <!-- -->
             <?php
-                $i = 0;
-                $chosen = array();
-                
-                foreach($arrSpeakers as $speaker) {
-                    $rnd = rand(0, count($arrSpeakers) - 1);
-                    if (in_array($rnd, $chosen))
-						continue;
-					
-					array_push($chosen, $rnd);
-                    $speaker = $arrSpeakers[$rnd];
-                    if (renderTalkTeaser($speaker)) {
-						if (++$i >= 5) 
-							break;
-					}
+                $speakers = $GLOBALS["speakers"];
+                if (count($speakers) <= 5) {
+                    foreach($speakers as $speaker) {
+                        # print ' => ' . $speaker->speaker->name . '<br>';
+                        renderTalkTeaser($speaker);
+                    }
+                } else {
+                    $i = 0;
+                    $chosen = array();
+                    foreach($speakers as $speaker) {
+                        $rnd = rand(0, count($speakers) - 1);
+                        if (in_array($rnd, $chosen))
+                            continue;
+                        
+                        array_push($chosen, $rnd);
+                        $speaker = $speakers[$rnd];
+                        if (renderTalkTeaser($speaker)) {
+                            if (++$i >= 5) 
+                                break;
+                        }
+                    }
                 }
             ?>
             <!-- -->
