@@ -55,13 +55,13 @@
                 <!-- /Таблица с ценами -->
                 <div class="cpp-b_only-desktop">
                     <a href="https://c-user-group-russia.timepad.ru/event/593746/" data-twf-placeholder="yes">Перейтик заказу билетов</a>
-                    <script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="24933"
+                    <script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="3453"
                         data-twf2s-event--id="593746" data-timepad-widget-v2="event_register"
                         src="https://timepad.ru/js/tpwf/loader/min/loader.js">
                         (function() {
                             return {
                                 "loadCSS": [
-                                    "<?php echo $GLOBALS["prefix"]?>/app/build/css/timepad.css"
+                                    "./app/build/css/timepad.css"
                                 ],
                                 "skipBaseCSS": true,
                                 "disableBootstrap": true
