@@ -26,33 +26,28 @@
                       <th>Онлайн</th>
                     </tr>
                     <tr class="price__table-row">
-                      <td>до 31.12.17</td>
+                    <tr class="price__table-row">
+                      <td>с до 31.01.18</td>
                       <td>9500₽</td>
                       <td>8000₽</td>
                       <td>3000₽</td>
                     </tr>
                     <tr class="price__table-row">
-                      <td>с 01.01.18 по 31.01.18</td>
+                      <td>с 01.02.18 по 28.02.18</td>
                       <td>10500₽</td>
                       <td>9000₽</td>
                       <td>3000₽</td>
                     </tr>
                     <tr class="price__table-row">
-                      <td>с 01.02.18 по 28.02.18</td>
+                      <td>с 01.03.18 по 31.03.18</td>
                       <td>11500₽</td>
                       <td>10000₽</td>
                       <td>3000₽</td>
                     </tr>
                     <tr class="price__table-row">
-                      <td>с 01.03.18 по 31.03.18</td>
+                      <td>с 01.04.18 по 19.04.18</td>
                       <td>12500₽</td>
                       <td>11000₽</td>
-                      <td>3000₽</td>
-                    </tr>
-                    <tr class="price__table-row">
-                      <td>с 01.04.18 по 19.04.18</td>
-                      <td>13500₽</td>
-                      <td>12000₽</td>
                       <td>3000₽</td>
                     </tr>
                   </table>
