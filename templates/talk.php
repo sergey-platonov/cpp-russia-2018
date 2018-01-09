@@ -30,7 +30,8 @@
                     <img src="<?php echo $preifx . '../' . $filename; ?>" style="width: 15.938rem;">
                 <?php endforeach; ?>
                 <?php else: ?>
-					<img src=/"<?php echo $GLOBALS["prefix"];?>/speakers_data/photo.png" style="width: 15.938rem;">
+                    <?php $prefix = $prefix ? $prefix : "/"?>
+					<img src="<?php echo $prefix;?>speakers_data/photo.png" style="width: 15.938rem;">
                 <?php endif ?>
                 </div>
                 

@@ -1,0 +1,12 @@
+
+{
+  "speaker": {
+    "name": "Александр Гранин"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "Track C",
+    "time": "16:00 - 17:00",
+    "title": "Software Transactional Memory"
+  }
+}

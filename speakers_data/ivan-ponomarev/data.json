@@ -1,0 +1,11 @@
+{
+  "speaker": {
+    "name": "Иван Пономарёв"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "Track C",
+    "time": "12:45 - 13:45",
+    "title": "Crash репорты Android NDK"
+  }
+}
