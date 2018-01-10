@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Конференция C++ Russia, 19-21 апреля 2018</title>
+    <title><?php tr('title')?></title>
     <?php partial("includes", $GLOBALS["project_root"]); ?>
 </head>
 <body class="cpp-r main">
@@ -11,8 +11,7 @@
     <div class="cpp-r_wrap">
         <!-- -->
         <h1 class="cpp-e_page-title">
-            Конференция C++ Russia,<br>
-            19-21 апреля 2018
+            <?php tr('title with br') ?>
         </h1>
         <!-- -->
         <!-- -->
@@ -24,7 +23,7 @@
                         25
                     </div>
                     <div class="fact">
-                        лучших спикеров
+                        <?php tr('best speakers')?>
                     </div>
                 </div>
                 <!-- -->
@@ -34,9 +33,7 @@
                         1250
                     </div>
                     <div class="fact">
-                        минут информации<br>
-                        для опытных<br>
-                        разработчиков
+                        <?php tr('minutes') ?>
                     </div>
                 </div>
                 <!-- -->

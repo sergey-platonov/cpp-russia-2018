@@ -37,7 +37,7 @@ function map_talk_details($year, $speaker) {
     $speakerData = getSpeakerDataByDirName($speaker);
     if (!$speakerData) {
         header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
-        echo "Запрашиваемая страница не найдена";
+        tr('not found');
     } else {
         require __DIR__ . '/templates/talk.php';
     }
@@ -58,7 +58,7 @@ function map_workshop_details($year, $speaker) {
     $speakerData = getSpeakerDataByDirName($speaker);
     if (!$speakerData) {
         header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
-        echo "Запрашиваемая страница не найдена ";
+        tr('not found');
     } else {
         require __DIR__ . '/templates/workshop.php';
     }

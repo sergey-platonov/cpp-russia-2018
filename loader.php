@@ -1,7 +1,7 @@
 <?php
 include("partial.php");
 include("vendor/autoload.php");
-
+include("translations.php");
 
 /**
  * return all speaker data in array

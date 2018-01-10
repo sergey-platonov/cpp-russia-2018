@@ -5,7 +5,13 @@
                 <?php echo $speaker->talk->date; ?>
             </div>
             <div class="track">
-                <?php echo ucwords($speaker->talk->track); ?><br>
+                <?php
+                $colspan = property_exists($speaker->talk, 'colspan') ? $speaker->talk->colspan : 1;
+                if ($colspan == 1)
+                    echo ucwords($speaker->talk->track);
+                else
+                    echo "Track A";
+                ?><br>
                 <?php echo $speaker->talk->time; ?>
             </div>
         </div>

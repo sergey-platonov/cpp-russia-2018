@@ -8,20 +8,15 @@
             </div>
             <div class="sidetext-right row-col">
                 <h2 class="cpp-e_block-title">
-                    О конференции
+                    <?php tr('about') ?>
                 </h2>
                 <div class="cpp-b_block-text">
-                    <p>Конференция «C++ Russia» с блинами и матрёшками! Как всегда, лучшие докладчики<br>
-                       со всей страны на два дня. Конференция ориентирована на опытных разработчиков, никаких вводных лекций!</p>
-                    <p>Место проведения: Санкт-Петербург, ул. Кораблестроителей, 14, гостиница Прибалтийская.</p>
-                       <p>В течении года сообщество проводит встречи в разных городах России: Москве, Санкт-Петербурге, Новосибирске, Екатеринбурге, Нижнем Новгороде, Саратове.<br>
-                       На встречах выступают докладчики из разных городов и стран.</p>
+                    <?php tr('about conf') ?>
+                    <?php tr('location') ?>
+                    <?php tr('community') ?>
                 </div>
                 <div class="cpp-b_bordered-text">
-                    Открывать конференцию будет Jon Kalb разработчик с 25-летним стажем<br>
-                    В течении этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
-                    Yahoo и других компаниях. Jon -- организатор конференции CppCon. Автор книги <br>
-                    C++ Today: The Beast is Back.
+                    <?php tr('keynote') ?>
                 </div>
             </div>
         </div>
@@ -36,13 +31,12 @@
             <div class="cpp-b_talks_description row-col">
                 <a name="talks" class="cpp-e_hash-link"></a>
                 <h2 class="cpp-e_block-title">
-                    Доклады
+                    <?php tr('talks') ?>
                 </h2>
                 <div class="cpp-b_block-text">
-                    <p><strong>Подать заявку на доклад можно<br>до 15 марта 2018 года.</strong></p>
-                    <p>Как обычно, продолжительность доклада не должна превышать 50 минут (с учетом вопросов). Мы рады докладам о C++(11/14/17), STL, Boost, Qt, любых других библиотеках, тестировании и сборке крупных проектов на С++, асинхронности и конкурентности, etc.</p>
+                    <?php tr('apply') ?>
                 </div>
-                <a class="bubble-link" href="mailto:talks@cpp-russia.ru">Хочу стать<br>спикером!</a>
+                <a class="bubble-link" href="mailto:talks@cpp-russia.ru"><?php tr('apply bubble') ?></a>
             </div>
             <!-- -->
             <!-- -->
@@ -50,7 +44,6 @@
                 $speakers = $GLOBALS["speakers"];
                 if (count($speakers) <= 5) {
                     foreach($speakers as $speaker) {
-                        # print ' => ' . $speaker->speaker->name . '<br>';
                         renderTalkTeaser($speaker);
                     }
                 } else {
@@ -73,7 +66,7 @@
             <!-- -->
         </div>
         <div class="cpp-b_content-centered">
-            <a class="cpp-e_green-button" href="/talks">Все доклады</a>
+            <a class="cpp-e_green-button" href="/talks"></a>
         </div>
     </div>
 </section>
@@ -91,8 +84,7 @@
                     Контакты
                 </h2>
                 <div class="cpp-b_block-text">
-                    <p style="margin-bottom: 2rem;">Место проведения: г. Санкт-Петербург</p>
-                    <p>ул. Кораблестроителей, 14, гостиница Прибалтийская</p>
+                    <?php tr('location') ?>
                     <p>Если у Вас есть вопросы,<br>их можно задать по телефону или почте </p>
                 </div>
                 <div class="cpp-b_contacts">
