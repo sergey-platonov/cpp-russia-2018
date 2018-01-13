@@ -2,10 +2,9 @@
   "speaker": {
     "name": "Полухин Антон"
   },
-  "talk": {
-    "date": "20/04/18",
-    "track": "Track B",
-    "time": "12:45 - 13:45",
-    "title": "TBA"
+    "workshop": {
+    "date": "19/04/18",
+    "time": "9:00 - 20:00",
+    "title": "C++"
   }
 }

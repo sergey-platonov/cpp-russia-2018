@@ -3,7 +3,7 @@
     "name": "Ivan Cukic"
   },
   "talk": {
-    "date": "20/04/18",
+    "date": "21/04/18",
     "track": "TRACK A",
     "time": "12:45 - 13:45",
     "title": "TBA"
@@ -11,6 +11,6 @@
   "workshop": {
     "date": "19/04/18",
     "time": "9:00 - 20:00",
-    "title": "Applied functional programming in C+"
+    "title": "Applied functional programming in C++"
   }
 }
