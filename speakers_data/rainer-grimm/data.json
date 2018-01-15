@@ -6,11 +6,13 @@
     "date": "20/04/18",
     "track": "TRACK A",
     "time": "13:45 - 14:45",
-    "title": "Best Practices for Concurrency in Modern C++"
+    "title": "Best Practices for Concurrency in Modern C++",
+    "language": "english"
   },
   "workshop": {
     "date": "19/04/18",
     "time": "9:00 - 20:00",
-    "title": "Multithreading with modern C++"
+    "title": "Multithreading with modern C++",
+    "language": "english"
   }
 }

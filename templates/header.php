@@ -10,23 +10,34 @@
                 </div>
                 <div class="cpp-b_main-menu-links">
                     <div class="main-menu_link">
-                        <a href="/#about">О конференции</a>
+                        <a href="/#about"><?php tr('about') ?></a>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/talks">Доклады</a>
+                        <a href="/talks"><?php tr('talks') ?></a>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#program">Программа</a>
+                        <a href="/#program"><?php tr('schedule') ?></a>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#tickets">Билеты</a>
+                        <a href="/#tickets"><?php tr('tickets') ?></a>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#sponsors">Спонсоры</a>
+                        <a href="/#sponsors"><?php tr('sponsors') ?></a>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#contacts">Контакты</a>
+                        <a href="/#contacts"><?php tr('contacts') ?></a>
                     </div>
+                    <div class="main-menu_link">
+                        <a href="/#contacts"><?php tr('contacts') ?></a>
+                    </div>
+                    <div class="main-menu_link">
+                        <?php if (getLocale() == 'ru'): ?>
+                        <a href="/?lang=en">EN</a>
+                        <?php else: ?>
+                            <a href="/?lang=ru">RU</a>
+                        <?php endif ?>
+                    </div>
+
                 </div>
             </div>
         </div>

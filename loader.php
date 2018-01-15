@@ -53,15 +53,6 @@ function getTalkInfo($dir)
     }
 }
 
-function renderTalkInfo($data) 
-{
-    if (!$data) {
-		return '';
-    } else {
-        return '<td><span class="speaker">'.$speakerData->speaker->name.'</span>'.'<a class="talk-link" href="'.$dir.'">'.$speakerData->talk->title.'</a></td>';
-    }
-}
-
 function getWorkshopTitle($prefix, $dir) 
 {
     $speakerData = getSpeakerDataByDirName($dir);
@@ -124,7 +115,7 @@ function renderTalkTeaser($speaker)
 
 function renderTalkTeasers($arrSpeakers)
 {
-    foreach ($GLOBALS["speakers"] as $speaker) {
+    foreach ($arrSpeakers as $speaker) {
         renderTalkTeaser($speaker);
     }
 }
@@ -149,3 +140,43 @@ function renderMainProgram($projectRoot)
 		
 }
 
+function is_non_russian_speaker($speaker) {
+    if (property_exists($speaker, "talk") && $speaker->talk) {
+        $talk = $speaker->talk;
+        if (property_exists($talk, "language") && $speaker->language) {
+            print $talk->language . '<br>';
+            return $talk->language != "russian";
+        }
+    }
+    return false;
+}
+
+function renderFewTeasers($requiredSize) {
+    $locale = getLocale();
+    if ($locale == "ru") {
+        $speakers = $GLOBALS["speakers"];
+    } else {
+        $speakers = array_filter($GLOBALS["speakers"], function($speaker) {
+            if (property_exists($speaker, "talk") && $speaker->talk) {
+                $talk = $speaker->talk;
+                if (property_exists($talk, "language") && $talk->language)
+                    return $talk->language != "russian";
+            }
+            return false;
+        }
+        );
+    }
+    if (count($speakers) <= $requiredSize) {
+        foreach($speakers as $speaker) {
+            renderTalkTeaser($speaker);
+        }
+    } else {
+        shuffle($speakers);
+        for ($i = 0; $i < $requiredSize && count($speakers) > 0;) {
+            $speaker = array_pop($speakers);
+            if (renderTalkTeaser($speaker)) {
+                $i++;
+            }
+        }
+    }
+}

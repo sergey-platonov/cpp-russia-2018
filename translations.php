@@ -1,5 +1,19 @@
 <?php
 
+function getLocale() {
+    if ($GLOBALS['locale'])
+        $locale = $GLOBALS['locale'];
+    else
+        $locale = substr(locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']), 0, 2);
+    if (!$locale)
+        $locale = 'ru';
+
+    if ($locale != 'ru')
+        $locale = 'en';
+
+    return $locale;
+}
+
 function tr($text) {
     $TR['ru']['best speakers'] = 'лучших докладчиков';
     $TR['en']['best speakers'] = 'best speakers';
@@ -37,7 +51,7 @@ Yekaterinburg, Nizhny Novgorod, Kazan and Saratov. We invite speakers from place
 В течении этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
 Yahoo и других компаниях. Jon -- организатор конференции CppCon. Автор книги <br>
 C++ Today: The Beast is Back.';
-    $TR['en']['keynote'] = 'Keynote speaker is Jon Kalb. He has been programming in C++ for two and a half decades.<br> 
+    $TR['en']['keynotes'] = 'Keynote speaker is Jon Kalb. He has been programming in C++ for two and a half decades.<br> 
 During the last two decades he has written C++ for Amazon, Apple, Dow Chemical, Intuit, Lotus, Microsoft, Netscape, Sun, 
 Yahoo! and a number of companies that you\'ve not heard of. Jon is chairman of CppCon and author of the \'C++ Today: The Beast is Back\'';
 
@@ -58,7 +72,25 @@ next to C++ these days.</p>';
     $TR['ru']['all talks'] = 'Все доклады';
     $TR['en']['all talks'] = 'All talks';
 
-    $TR['ru'][''] = '';
+    $TR['ru']['contacts'] = 'Контакты';
+    $TR['en']['contacts'] = 'Contacts';
+
+    $TR['ru']['if you have questions'] = '<p>Если у Вас есть вопросы,<br>их можно задать по телефону или почте </p>';
+    $TR['en']['if you have questions'] = '<p>If you have questions,<br>you can ask them via phone or email</p>';
+
+    $TR['ru']['about'] = 'О конференции';
+    $TR['en']['about'] = 'About';
+
+    $TR['ru']['schedule'] = 'Программа';
+    $TR['en']['schedule'] = 'Schedule';
+
+    $TR['ru']['tickets'] = 'Билеты';
+    $TR['en']['Билеты'] = 'Tickets';
+
+    $TR['ru']['sponsors'] = 'Спонсоры';
+    $TR['en']['sponsors'] = 'Sponsors';
+
+    $TR['ru']['contacts'] = '';
     $TR['en'][''] = '';
 
     $TR['ru'][''] = '';
@@ -76,16 +108,16 @@ next to C++ these days.</p>';
     $TR['ru'][''] = '';
     $TR['en'][''] = '';
 
+    $TR['ru'][''] = '';
+    $TR['en'][''] = '';
 
+    $TR['ru'][''] = '';
+    $TR['en'][''] = '';
 
-    if ($GLOBALS['locale'])
-        $locale = $GLOBALS['locale'];
-    else
-        $locale = substr(locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']), 0, 2);
+    $TR['ru'][''] = '';
+    $TR['en'][''] = '';
 
-    if ($locale != 'ru')
-        $locale = 'en';
-
+    $locale = getLocale();
     if ($TR[$locale][$text])
         echo $TR[$locale][$text];
     else

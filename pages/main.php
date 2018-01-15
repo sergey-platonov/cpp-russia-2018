@@ -16,7 +16,7 @@
                     <?php tr('community') ?>
                 </div>
                 <div class="cpp-b_bordered-text">
-                    <?php tr('keynote') ?>
+                    <?php tr('keynotes') ?>
                 </div>
             </div>
         </div>
@@ -40,33 +40,11 @@
             </div>
             <!-- -->
             <!-- -->
-            <?php
-                $speakers = $GLOBALS["speakers"];
-                if (count($speakers) <= 5) {
-                    foreach($speakers as $speaker) {
-                        renderTalkTeaser($speaker);
-                    }
-                } else {
-                    $i = 0;
-                    $chosen = array();
-                    foreach($speakers as $speaker) {
-                        $rnd = rand(0, count($speakers) - 1);
-                        if (in_array($rnd, $chosen))
-                            continue;
-                        
-                        array_push($chosen, $rnd);
-                        $speaker = $speakers[$rnd];
-                        if (renderTalkTeaser($speaker)) {
-                            if (++$i >= 5) 
-                                break;
-                        }
-                    }
-                }
-            ?>
+            <?php renderFewTeasers(5)?>
             <!-- -->
         </div>
         <div class="cpp-b_content-centered">
-            <a class="cpp-e_green-button" href="/talks"></a>
+            <a class="cpp-e_green-button" href="/talks"><?php tr('all talks') ?></a>
         </div>
     </div>
 </section>
@@ -81,11 +59,11 @@
             <div class="row-col">
                 <a name="contacts" class="cpp-e_hash-link"></a>
                 <h2 class="cpp-e_block-title">
-                    Контакты
+                    <?php tr('contacts') ?>
                 </h2>
                 <div class="cpp-b_block-text">
                     <?php tr('location') ?>
-                    <p>Если у Вас есть вопросы,<br>их можно задать по телефону или почте </p>
+                    <?php tr('if you have questions') ?>
                 </div>
                 <div class="cpp-b_contacts">
                     <div class="cpp-e_contact phone">

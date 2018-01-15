@@ -9,9 +9,17 @@ $router = new AltoRouter();
 function map_home($year) {
     require __DIR__ . '/main.php';
 }
+function map_home_en($year) {
+    $GLOBALS['locale'] = 'en';
+    require __DIR__ . '/main.php';
+}
 
 $router->map( 'GET',  '/[i:year]/', map_home );
 $router->map( 'GET',  '/', map_home );
+$router->map( 'GET',  '/[i:year]/ru', map_home );
+$router->map( 'GET',  '/ru', map_home );
+$router->map( 'GET',  '/[i:year]/en', map_home_en );
+$router->map( 'GET',  '/en', map_home_en );
 
 // map all talks page
 function map_all_talks($year) {
