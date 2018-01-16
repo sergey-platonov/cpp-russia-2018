@@ -6,11 +6,13 @@
     "date": "21/04/18",
     "track": "TRACK A",
     "time": "12:45 - 13:45",
-    "title": "TBA"
+    "title": "TBA",
+    "language": "english"
   },
   "workshop": {
     "date": "19/04/18",
     "time": "9:00 - 20:00",
-    "title": "Applied functional programming in C++"
+    "title": "Applied functional programming in C++",
+    "language": "english"
   }
 }

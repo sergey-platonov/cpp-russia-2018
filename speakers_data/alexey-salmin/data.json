@@ -1,0 +1,13 @@
+
+{
+  "speaker": {
+    "name": "Алексей Салмин"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "Track B",
+    "time": "17:00 - 18:00",
+
+    "title": "Memory Management Tips & Tricks"
+  }
+}

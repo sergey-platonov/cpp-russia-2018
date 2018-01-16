@@ -7,6 +7,7 @@
     "track": "TRACK C",
     "time": "10:00 - 12:00",
     "title": "Keynote",
-    "colspan": 3
+    "colspan": 3,
+    "language": "english"
   }
 }
