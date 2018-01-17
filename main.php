@@ -20,7 +20,7 @@
                 <!-- -->
                 <div class="number-fact row-col">
                     <div class="number">
-                        25
+                        26
                     </div>
                     <div class="fact">
                         <?php tr('best speakers')?>

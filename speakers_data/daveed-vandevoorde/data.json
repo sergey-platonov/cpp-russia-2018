@@ -1,0 +1,13 @@
+{
+  "speaker": {
+    "name": "Daveed Vandevoorde"
+  },
+  "talk": {
+    "date": "21/04/18",
+    "track": "Track C",
+    "time": "10:00 - 12:00",
+    "title": "Reflective Metaprogramming in C++",
+    "language": "english",
+    "colspan": 3
+  }
+}

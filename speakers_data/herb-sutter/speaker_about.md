@@ -1,0 +1,1 @@
+Herb chairs the ISO C++ committee and is the primary author or co-author of a number of Standard C++ features, including nullptr, enum class, parallel algorithms, C++17 structured bindings, and the in-progress unified ＜=＞ comparison operator. 

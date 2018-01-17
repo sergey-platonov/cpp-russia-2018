@@ -1,0 +1,12 @@
+{
+  "speaker": {
+    "name": "Arno Schödl"
+  },
+    "talk": {
+    "date": "20/04/18",
+    "track": "Track A",
+    "time": "12:45 - 13:45",
+    "title": "From Iterators To Ranges — The Upcoming Evolution Of the Standard Library",
+    "language": "english"
+  }
+}

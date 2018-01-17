@@ -1,0 +1,13 @@
+{
+  "speaker": {
+    "name": "Herb Sutter"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "Track A",
+    "time": "16:00 - 17:00",
+    "title": "TBA (skype talk)",
+    "language": "english",
+    "skype": true
+  }
+}

@@ -31,7 +31,15 @@
 						else
 							$rowText .= '<td>';
 						if (!$data->system) {
-							$rowText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href=".'.$prefix.'/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a></td>'."\n";
+						    $imgs = '';
+                            if (property_exists($data->talk, "language") && $data->talk->language == "english")
+                                $imgs = '<img src="/app/build/template/eng.png" title="Доклад на английском языке">';
+                            $skype = '';
+                            if (property_exists($data->talk, "skype") && $data->talk->skype)
+                                $imgs = $imgs . '<img src="/app/build/template/skype.png" title="Доклад по скайпу">';
+
+							$rowText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href=".'
+                                .$prefix.'/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a>'.$imgs.'</td>'."\n";
 							$rows[$data->talk->track] = $rowText;
 						}
 						else {

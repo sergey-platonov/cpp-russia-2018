@@ -1,7 +1,24 @@
-<!-- Gold спонсоры -->
+<!-- Platinum спонсоры -->
 <section class="cpp-b_section">
     <div class="cpp-r_wrap">
         <a name="sponsors" class="cpp-e_hash-link"></a>
+        <h2 class="cpp-e_block-title">
+            Platinum спонсор
+        </h2>
+        <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
+            <!-- -->
+            <div class="sponsor row-col">
+                <a href="https://www.think-cell.com/"><img src="/app/frontend/template/partners/think-cell_screen.png" alt="think-cell"></a>
+            </div>
+            <!-- -->
+        </div>
+    </div>
+</section>
+<!-- /Silver спонсоры -->
+
+<!-- Gold спонсоры -->
+<section class="cpp-b_section">
+    <div class="cpp-r_wrap">
         <h2 class="cpp-e_block-title">
             Gold спонсоры
         </h2>
@@ -93,6 +110,9 @@
             <!-- -->
             <div class="sponsor row-col">
                 <a href="http://corehard.by/"><img src="/app/frontend/template/partners/corehard-logo-community.png" alt=""></a>
+            </div>
+            <div class="sponsor row-col">
+                <a href="https://www.saratovit.ru/"><img src="/app/frontend/template/partners/sit_logo color.png" alt=""></a>
             </div>
             <!-- -->
         </div>

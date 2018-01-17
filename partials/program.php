@@ -27,6 +27,7 @@
               $ivanTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/ivan-cukic");
               $rainerTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/rainer-grimm"); 
               $pavelTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/pavel-filonov");
+              $antonTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/anton-polukhin");
             ?>
             <table>
                 <tbody>
@@ -35,40 +36,44 @@
                     <th><?php echo $ivanTitle ?></th>
                     <th><?php echo $rainerTitle ?></th>
                     <th><?php echo $pavelTitle ?></th>
+                    <th><?php echo $antonTitle ?></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
-                    <td colspan="3">Регистрация на мастер-классы</td>
+                    <td colspan="4">Регистрация на мастер-классы</td>
                 </tr>
                 <tr>
                     <td>10:00 - 12:00</td>
                     <td><?php echo $ivanTitle ?> I</td>
                     <td><?php echo $rainerTitle ?> I</td>
                     <td><?php echo $pavelTitle ?> I</td>
+                    <td><?php echo $antonTitle ?> I</td>
                 </tr>
                 <tr class="gray">
                     <td>12:00 - 12:45</td>
-                    <td colspan="3">Кофе-брейк</td>
+                    <td colspan="4">Кофе-брейк</td>
                 </tr>
                 <tr>
                     <td>12:45 - 14:45</td>
                     <td><?php echo $ivanTitle ?> II</td>
                     <td><?php echo $rainerTitle ?> II</td>
                     <td><?php echo $pavelTitle ?> II</td>
+                    <td><?php echo $antonTitle ?> II</td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
-                    <td colspan="3">Обед</td>
+                    <td colspan="4">Обед</td>
                 </tr>
                 <tr>
                     <td>16:00 - 18:00</td>
                     <td><?php echo $ivanTitle ?> III</td>
                     <td><?php echo $rainerTitle ?> III</td>
                     <td><?php echo $pavelTitle ?> III</td>
+                    <td><?php echo $antonTitle ?> III</td>
                 </tr>
                 <tr class="gray">
                     <td>18:00 - 20:00</td>
-                    <td colspan="3">Предрегистрация на конференцию</td>
+                    <td colspan="4">Предрегистрация на конференцию</td>
                 </tr>
                 </tbody>
             </table>

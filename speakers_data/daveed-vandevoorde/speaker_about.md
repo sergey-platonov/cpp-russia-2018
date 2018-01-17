@@ -1,0 +1,1 @@
+Belgian computer scientist who lives near Princeton, NJ, USA. He is vice-president of engineering at the Edison Design Group (EDG), where he contributes primarily to the implementation of their C++ compiler front end. He is an active member of the C++ standardization committee where he primarily contributes to the core language evolution work. 
