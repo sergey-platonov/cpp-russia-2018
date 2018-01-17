@@ -36,8 +36,8 @@ function tr($text) {
 
     $TR['ru']['about conf'] = '<p>Конференция «C++ Russia» с блинами и матрёшками! Как всегда, лучшие докладчики<br>
 со всей страны на два дня. Конференция ориентирована на опытных разработчиков, никаких вводных лекций!</p>';
-    $TR['en']['about conf'] = '<p>C++ Russia with bliny and matryoshkas! Best speakers< from all over the Russia for two days.
- The conference is for experienced developers, no tutorials!</p>';
+    $TR['en']['about conf'] = '<p>C++ Russia with bliny and matryoshkas! Best speakers< from all over Russia for two days.
+ The conference is for experienced developers!</p>';
 
     $TR['ru']['location'] = '<p>Место проведения: Санкт-Петербург, ул. Кораблестроителей, 14, гостиница Прибалтийская.</p>';
     $TR['en']['location'] = '<p>Location: Saint Petersburg, Park Inn Pribalitiyskaya.</p>';
