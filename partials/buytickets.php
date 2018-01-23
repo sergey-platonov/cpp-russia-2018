@@ -76,7 +76,7 @@
                     </script>
                 </div>
                 <div class="cpp-b_only-mobile">
-                    <a style="display: block;    margin: 0 auto;" class="cpp-e_green-button" href="https://c-user-group-russia.timepad.ru/event/407033/">Купить билет</a>
+                    <a style="display: block;    margin: 0 auto;" class="cpp-e_green-button" href="https://c-user-group-russia.timepad.ru/event/593746/">Купить билет</a>
                 </div>
             </div>
         </div>
