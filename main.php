@@ -11,7 +11,8 @@
     <div class="cpp-r_wrap">
         <!-- -->
         <h1 class="cpp-e_page-title">
-            Конференция C++ Russia,<br>
+            Конференция C++ Russia<br>
+            Санкт-Петербург<br>
             19-21 апреля 2018
         </h1>
         <!-- -->
