@@ -2,8 +2,8 @@
 
 if (window.google) {
     let position = {
-        lat: 59.939052,
-        lng: 30.214782
+        lat: 59.9245296,
+        lng: 30.3868578
     };
 
     let map = new google.maps.Map(document.getElementById("google_map"), {
