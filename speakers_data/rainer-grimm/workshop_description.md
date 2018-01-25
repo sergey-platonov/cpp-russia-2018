@@ -1,17 +1,10 @@
-Embedded programming is one of the key domains of modern C++. 
-Because C++ empowers you to talk directly to the hardware and offers you this kinds of abstractions you need build complex systems. 
-With C++11 C++ gets a lot of mighty features for the embedded programming. 
-C++ has features like the move semantic for cheap move operations, constexpr functions for calculations at compile time, or new containers like std::array, which combines the best from the C array and the std::vector.
+Prerequisite
 
-I will show you in the workshop the benefits of modern C++ in the embedded programming. Therefore, I will concentrate on the requirements of embedded programming and give the answers in modern C++. 
-The requirements are:
+    C++
+    Fundamentals of multithreading
 
-* Safety critical systems
-* Reduced resources
-* Long lifetime
-* Many cores
+Agenda
 
-After the workshop you will understand the well-known sentence from Bjarne Stroustrup about c++11 in embedded programming: 
-"... make C++ even better for embedded system programming..".
+This workshop about multithreading with modern C++ will be about the high end interface of C++ and the low level details. At the high end, we will cover the known topics like Threads, Shared variables, Save initialization of variables, Thread local data, condition variables and tasks.
 
-The participant should have an laptop with an decent C++ compiler (C++11 at least). Basic knowledge in C++ is sufficient.
+That includes the theory, but also a lot of hands on experience with that challenging topic. At the low level details, we will look at the details of the memory model. You will get an idea, what the memory model is all about, how you can reason about your lock-free programs and of course, how you can verify, that your program is data race free.
