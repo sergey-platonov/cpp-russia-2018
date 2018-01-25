@@ -6,7 +6,7 @@ $GLOBALS["speakers"] = getAllSpeakerData(__DIR__)["speakers"];
 
 $router = new AltoRouter();
 // map homepage
-function map_home($year) {
+function map_home() {
     require __DIR__ . '/main.php';
 }
 
@@ -15,25 +15,19 @@ $router->map( 'GET',  '/', map_home );
 
 // map all talks page
 function map_all_talks($year) {
-    if ($year)
-        $GLOBALS["prefix"] = '/' . basename(__DIR__);
-    else
-        $GLOBALS["prefix"] = '';
-
+    $GLOBALS["prefix"] = '';
     require __DIR__ . '/templates/talks.php';
 }
-$router->map( 'GET', '/[i:year]/talks', map_all_talks );
+
+function map_all_talks_year($year) {
+    $GLOBALS["prefix"] = '/' . basename(__DIR__);
+    require __DIR__ . '/templates/talks.php';
+}
+
+$router->map( 'GET', '/[i:year]/talks', map_all_talks_year );
 $router->map( 'GET', '/talks', map_all_talks );
 
-// map talk details page
-function map_talk_details($year, $speaker) {
-    if (!$speaker) {
-        $speaker = $year;
-        $GLOBALS["prefix"] = '';
-    } else {
-        $GLOBALS["prefix"] = '/' . basename(__DIR__);
-    }
-
+function map_talk_detalis_impl($speaker) {
     $speakerData = getSpeakerDataByDirName($speaker);
     if (!$speakerData) {
         header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
@@ -43,18 +37,22 @@ function map_talk_details($year, $speaker) {
     }
 }
 
-$router->map( 'GET', '/[i:year]/talks/[*:speaker]', map_talk_details );
+function map_talk_details_year($year, $speaker) {
+    $GLOBALS["prefix"] = '/' . basename(__DIR__);
+    map_talk_detalis_impl($speaker);
+}
+
+// map talk details page
+function map_talk_details($speaker) {
+    $GLOBALS["prefix"] = '';
+    map_talk_detalis_impl($speaker);
+}
+
+$router->map( 'GET', '/[i:year]/talks/[*:speaker]', map_talk_details_year );
 $router->map( 'GET', '/talks/[*:speaker]', map_talk_details );
 
 // map workshop details page
-function map_workshop_details($year, $speaker) {
-    if (!$speaker) {
-        $speaker = $year;
-        $GLOBALS["prefix"] = '';
-    } else {
-        $GLOBALS["prefix"] = '/' . basename(__DIR__);
-    }
-
+function map_workshop_details_impl($speaker) {
     $speakerData = getSpeakerDataByDirName($speaker);
     if (!$speakerData) {
         header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
@@ -64,7 +62,17 @@ function map_workshop_details($year, $speaker) {
     }
 }
 
-$router->map( 'GET', '/[i:year]/workshops/[*:speaker]', map_workshop_details );
+function map_workshop_details_year($year, $speaker) {
+    $GLOBALS["prefix"] = '/' . basename(__DIR__);
+    map_workshop_details_impl($speaker);
+}
+
+function map_workshop_details($speaker) {
+    $GLOBALS["prefix"] = '';
+    map_workshop_details_impl($speaker);
+}
+
+$router->map( 'GET', '/[i:year]/workshops/[*:speaker]', map_workshop_details_year );
 $router->map( 'GET', '/workshops/[*:speaker]', map_workshop_details );
 
 // match current request url
