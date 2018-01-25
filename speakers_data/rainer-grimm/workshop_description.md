@@ -1,10 +1,31 @@
-Prerequisite
+*Abstract*
 
-    C++
-    Fundamentals of multithreading
+This class gives you a detailed insight into the multithreading facilities of C++11 and C++14, and the parallel algorithms which we got with C++17. If possible, we will have a more in-depth look into the C++ memory model consisting of the atomics and the various memory models in C++. This insight will provide you with a better understanding of the general concurrency features of C++.
 
-Agenda
+*Prerequisite*
 
-This workshop about multithreading with modern C++ will be about the high end interface of C++ and the low level details. At the high end, we will cover the known topics like Threads, Shared variables, Save initialization of variables, Thread local data, condition variables and tasks.
+Participants should have a basic knowledge of the C++ language and the fundamentals of multithreading. In the class, I will give you a concise introduction to the topic. This introduction provides the starting point for the exercises; therefore, you should bring your laptop with you including a C++11 or C++14 compiler. You will get in return the training material consisting of the presentation, the exercises, and the solutions to the exercises.
 
-That includes the theory, but also a lot of hands on experience with that challenging topic. At the low level details, we will look at the details of the memory model. You will get an idea, what the memory model is all about, how you can reason about your lock-free programs and of course, how you can verify, that your program is data race free.
+Agenda:
+
+Multithreading
+  - Threads
+  - Shared Data
+    - Mutexes and Locks
+    - Thread-safe Initialisation
+  - Thread-Local Data
+  - Condition Variables
+  - Tasks (Promises and Futures)
+
+The Memory Model
+  - The Contract
+  - Atomics
+  - The Synchronisation and Ordering Constraints
+    -- Sequential Consistency
+    -- Acquire-Release Semantic
+    -- Relaxed Semantic
+
+Parallel Algorithms of the Standard Template Library (C++17)
+  - Execution Policies
+  - Algorithms
+  -- The New Algorithms 
