@@ -1,4 +1,3 @@
-
 {
   "speaker": {
     "name": "Jonathan Boccara"
@@ -7,7 +6,7 @@
     "date": "20/04/18",
     "track": "Track A",
     "time": "17:00 - 18:00",
-    "title": "TBA",
+    "title": "105 STL Algorithms in Less Than an Hour",
     "language": "english"
   }
 }
