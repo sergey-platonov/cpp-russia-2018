@@ -24,6 +24,7 @@
 					$rowsText = "";
 					$rows = [];
 					foreach ($schedule[$day][$time] as $data) {
+//					    echo $time.'<br>';
 						$colspan = property_exists($data->talk, 'colspan') ? $data->talk->colspan : 1;
 						$rowText = '';
 						if ($colspan > 1)

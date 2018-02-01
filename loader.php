@@ -27,7 +27,7 @@ function getSpeakerDataByDirName($dir)
 				
 			if (property_exists($jsonData, "speaker") && $jsonData->speaker) {
 				$jsonData->speaker->about = $Parsedown->text(file_get_contents($root . "speakers_data/" . $dirname . "/speaker_about.md"));
-				$jsonData->speaker->images = glob("speakers_data/" . $dirname . "/*.{gif,jpg,png}", GLOB_BRACE);	
+				$jsonData->speaker->images = glob("speakers_data/" . $dirname . "/*.{gif,jpg,png,jpeg}", GLOB_BRACE);
 				$jsonData->speaker->dirname = $dirname;
 			}
 
@@ -133,8 +133,15 @@ function renderTalkTeasers($arrSpeakers)
 function renderDay($schedule, $day)
 {
 	$timeArr = array_keys($schedule[$day]);
-	$tracks = array_keys($schedule[$day][reset($timeArr)]);
-	sort($timeArr);
+    sort($timeArr);
+    $tracks = [];
+    foreach ($timeArr as $time) {
+        foreach (array_keys($schedule[$day][$time]) as $track) {
+            if (!in_array($track, $tracks)) {
+                array_push($tracks, $track);
+            }
+        }
+    }
 	require __DIR__ . '/templates/program_day.php';
 }
 
