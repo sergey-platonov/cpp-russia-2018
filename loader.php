@@ -33,6 +33,8 @@ function getSpeakerDataByDirName($dir)
 
 			if (property_exists($jsonData, "workshop") && $jsonData->workshop)
 				$jsonData->workshop->description = $Parsedown->text(file_get_contents($root . "speakers_data/" . $dirname . "/workshop_description.md"));
+
+            $jsonData->has_custom_header = property_exists($jsonData, "custom_title");
 		}
 		if (property_exists($jsonData, "talk") && $jsonData->talk) 
 			$jsonData->talk->track = strtolower($jsonData->talk->track);
