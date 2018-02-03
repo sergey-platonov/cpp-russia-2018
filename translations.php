@@ -25,8 +25,8 @@ function tr($text) {
     $TR['ru']['title'] = 'Конференция C++ Russia, 19-21 апреля 2018';
     $TR['en']['title'] = 'C++ Russia 2018, 19-21 of April 2018';
 
-    $TR['ru']['title with br'] = 'Конференция C++ Russia,<br> 19-21 апреля 2018';
-    $TR['en']['title with br'] = 'C++ Russia 2018,<br> 19-21 of April 2018';
+    $TR['ru']['title with br'] = 'Конференция C++ Russia<br>Санкт-Петербург<br>19-21 апреля 2018';
+    $TR['en']['title with br'] = 'C++ Russia Conference<br>Saint Petersburg<br>19-21 April 2018';
 
     $TR['ru']['not found'] = 'Запрашиваемая страница не найдена';
     $TR['en']['not found'] = 'Requested page not found';
@@ -47,7 +47,7 @@ function tr($text) {
     $TR['en']['community'] = '<p>By now the Group has set up meetings in several cities of Russia: Moscow, Saint-Petersburg, 
 Yekaterinburg, Nizhny Novgorod, Kazan and Saratov. We invite speakers from places other than meeting site.</p>';
 
-    $TR['ru']['keynotes'] = 'Открывать конференцию будет Jon Kalb разработчик с 25-летним стажем<br>
+    $TR['ru']['keynotes'] = 'Открывать конференцию будет Jon Kalb, разработчик с 25-летним стажем<br>
 В течении этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
 Yahoo и других компаниях. Jon -- организатор конференции CppCon. Автор книги <br>
 C++ Today: The Beast is Back.';
