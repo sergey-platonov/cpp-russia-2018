@@ -1,1 +1,3 @@
-Herb chairs the ISO C++ committee and is the primary author or co-author of a number of Standard C++ features, including nullptr, enum class, parallel algorithms, C++17 structured bindings, and the in-progress unified ＜=＞ comparison operator. 
+Herb Sutter is chair of the ISO C++ committee and a software architect at Microsoft. He is the designer or codesigner of several features that are now part of the C++ standard (or draft standard), including lambda functions, operator<=>, Parallel STL, atomics, the C++ memory model, delegating constructors, override, final, nullptr, atomic_shared_ptr, and others.
+
+ 

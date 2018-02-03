@@ -8,7 +8,7 @@
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->
             <div class="sponsor row-col">
-                <a href="https://www.think-cell.com/"><img src="/app/frontend/template/partners/think-cell_screen.png" alt="think-cell"></a>
+                <a href="https://www.think-cell.com/career/dev"><img src="/app/frontend/template/partners/think-cell_screen.png" alt="think-cell"></a>
             </div>
             <!-- -->
         </div>

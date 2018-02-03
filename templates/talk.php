@@ -17,7 +17,12 @@
                 <div class="sidetext-left row-col"></div>
                 <div class="sidetext-right row-col">
                     <h1 class="cpp-e_block-title mod-big">
-                        <?php echo $speakerData->talk->title; ?>
+                        <?php
+                        if ($speakerData->has_custom_header)
+                            echo $speakerData->custom_title;
+                        else
+                            echo $speakerData->talk->title;
+                        ?>
                     </h1>
                     <div class="cpp-b_block-text"></div>
                 </div>
@@ -38,10 +43,19 @@
                 <div class="sidetext-right row-col">
                     <div class="cpp-b_block-text">
                         <div class="cpp-e_speaker-name">
-                            <?php echo $speakerData->speaker->name; ?>
+                            <?php
+                            if (!$speakerData->has_custom_header)
+                                echo $speakerData->speaker->name;
+                            ?>
                         </div>
                         <?php echo $speakerData->speaker->about; ?>
                         <hr>
+                        <div class="cpp-e_speaker-name">
+                            <?php
+                            if ($speakerData->has_custom_header)
+                                echo $speakerData->talk->title;
+                            ?>
+                        </div>
                         <!-- Полное описание доклада -->
                         <?php echo $speakerData->talk->description; ?>
                      </div>

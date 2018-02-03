@@ -1,17 +1,31 @@
-Embedded programming is one of the key domains of modern C++. 
-Because C++ empowers you to talk directly to the hardware and offers you this kinds of abstractions you need build complex systems. 
-With C++11 C++ gets a lot of mighty features for the embedded programming. 
-C++ has features like the move semantic for cheap move operations, constexpr functions for calculations at compile time, or new containers like std::array, which combines the best from the C array and the std::vector.
+*Abstract*
 
-I will show you in the workshop the benefits of modern C++ in the embedded programming. Therefore, I will concentrate on the requirements of embedded programming and give the answers in modern C++. 
-The requirements are:
+This class gives you a detailed insight into the multithreading facilities of C++11 and C++14, and the parallel algorithms which we got with C++17. If possible, we will have a more in-depth look into the C++ memory model consisting of the atomics and the various memory models in C++. This insight will provide you with a better understanding of the general concurrency features of C++.
 
-* Safety critical systems
-* Reduced resources
-* Long lifetime
-* Many cores
+*Prerequisite*
 
-After the workshop you will understand the well-known sentence from Bjarne Stroustrup about c++11 in embedded programming: 
-"... make C++ even better for embedded system programming..".
+Participants should have a basic knowledge of the C++ language and the fundamentals of multithreading. In the class, I will give you a concise introduction to the topic. This introduction provides the starting point for the exercises; therefore, you should bring your laptop with you including a C++11 or C++14 compiler. You will get in return the training material consisting of the presentation, the exercises, and the solutions to the exercises.
 
-The participant should have an laptop with an decent C++ compiler (C++11 at least). Basic knowledge in C++ is sufficient.
+Agenda:
+
+Multithreading
+  - Threads
+  - Shared Data
+    - Mutexes and Locks
+    - Thread-safe Initialisation
+  - Thread-Local Data
+  - Condition Variables
+  - Tasks (Promises and Futures)
+
+The Memory Model
+  - The Contract
+  - Atomics
+  - The Synchronisation and Ordering Constraints
+    -- Sequential Consistency
+    -- Acquire-Release Semantic
+    -- Relaxed Semantic
+
+Parallel Algorithms of the Standard Template Library (C++17)
+  - Execution Policies
+  - Algorithms
+  -- The New Algorithms 
