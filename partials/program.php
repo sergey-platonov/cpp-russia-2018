@@ -2,17 +2,15 @@
 <section class="cpp-b_section">
     <div class="cpp-r_wrap">
         <div class="cpp-b_sidetext cpp-b_responsive-row-cols">
-            <a name="program" class="cpp-e_hash-link"></a>
+            <a name="schedule" class="cpp-e_hash-link"></a>
             <div class="sidetext-left row-col">
             </div>
             <div class="sidetext-right row-col">
                 <h2 class="cpp-e_block-title">
-                    Программа
+                    <?php print tr('schedule') ?>
                 </h2>
                 <div class="cpp-b_block-text cpp-b_only-desktop">
-                    <p>После регистрации и вводной лекции вся программа идёт на трёх треках параллельно. После конференции на нашем сайте можно будет посмотреть слайды и видео докладов.<br>
-                        Программа второго дня публикуется по мере приёма заявок
-                    </p>
+                    <p><?php print tr('about schedule'); ?></p>
                 </div>
             </div>
         </div>

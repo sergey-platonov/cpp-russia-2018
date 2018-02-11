@@ -1,41 +1,40 @@
 <div class="responsive-head">
     <div class="cpp-r_wrap cpp-b_responsive-row-cols">
         <div class="row-col">
-            <a href="/" class="cpp-e_logo">
-
-            </a>
+            <?php
+                $prefix = lang_prefix();
+                print '<a href="/' . $prefix . '" class="cpp-e_logo"></a>';
+            ?>
             <div class="cpp-b_main-menu">
                 <div class="cpp-e_main-menu-button">
 
                 </div>
                 <div class="cpp-b_main-menu-links">
                     <div class="main-menu_link">
-                        <a href="/#about"><?php tr('about') ?></a>
+                        <?php render_header_link('about') ?>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/talks"><?php tr('talks') ?></a>
+                        <?php render_header_link('talks') ?>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#program"><?php tr('schedule') ?></a>
+                        <?php render_header_link('schedule') ?>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#tickets"><?php tr('tickets') ?></a>
+                        <?php render_header_link('tickets') ?>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#sponsors"><?php tr('sponsors') ?></a>
+                        <?php render_header_link('sponsors') ?>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#contacts"><?php tr('contacts') ?></a>
+                        <?php render_header_link('contacts') ?>
                     </div>
                     <div class="main-menu_link">
-                        <a href="/#contacts"><?php tr('contacts') ?></a>
-                    </div>
-                    <div class="main-menu_link">
-                        <?php if (getLocale() == 'ru'): ?>
-                        <a href="/?lang=en">EN</a>
-                        <?php else: ?>
-                            <a href="/?lang=ru">RU</a>
-                        <?php endif ?>
+                        <?php
+                        if (get_locale() == 'ru')
+                            print '<a href="/?lang=en">EN</a>';
+                        else
+                            print '<a href="/?lang=ru">RU</a>';
+                        ?>
                     </div>
 
                 </div>

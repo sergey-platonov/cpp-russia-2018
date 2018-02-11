@@ -5,15 +5,11 @@
             <div class="buy-tickets-left row-col">
                 <a name="tickets" class="cpp-e_hash-link"></a>
                 <h2 class="cpp-e_block-title">
-                    Билеты
+                    <?php print tr('tickets'); ?>
                 </h2>
                 <div class="cpp-b_block-text">
-                    <p>В этом году наших слушателей ждут<br> полезные мастерклассы, а для тех,<br>
-                        кто не может приехать на<br> конференцию, мы как всегда<br>
-                        организовали онлайн трансляцию. Присоединяйтесь!<br>
-                        Как всегда действует студенческая программа. <br>
-                        Для получения скидки пишите на<br>
-                        <a href="mailto:students@cpp-russia.ru">students@cpp-russia.ru</a>
+                    <p>
+                        <?php print tr('tickets info'); ?>
                     </p>
                 </div>
                 <div class="online">
@@ -21,35 +17,44 @@
                 </div>
             </div>
             <div class="buy-tickets-right row-col">
+                <?php
+                    $today = new DateTime("now");
+                ?>
               <!-- Таблица с ценами -->
                 <div class="price">
-                  <h2 class="price__title">Цены</h2>
+                  <h2 class="price__title"><?php print tr('prices')?></h2>
                   <table class="price__table">
+
                     <tr class="price__table-row">
                       <th>Дата покупки</th>
                       <th>Входной билет</th>
                       <th>Мастер-класс</th>
                       <th>Онлайн</th>
                     </tr>
-                    <tr class="price__table-row">
+                    <?php if (new DateTime("now") < new DateTime("2018-02-01")):?>
                     <tr class="price__table-row">
                       <td>с до 31.01.18</td>
                       <td>9500₽</td>
                       <td>8000₽</td>
                       <td>3000₽</td>
                     </tr>
+                    <?php endif; ?>
+                    <?php if (new DateTime("now") < new DateTime("2018-03-01")):?>
                     <tr class="price__table-row">
                       <td>с 01.02.18 по 28.02.18</td>
                       <td>10500₽</td>
                       <td>9000₽</td>
                       <td>3000₽</td>
                     </tr>
+                    <?php endif; ?>
+                    <?php if (new DateTime("now") < new DateTime("2018-04-01")):?>
                     <tr class="price__table-row">
                       <td>с 01.03.18 по 31.03.18</td>
                       <td>11500₽</td>
                       <td>10000₽</td>
                       <td>3000₽</td>
                     </tr>
+                    <?php endif; ?>
                     <tr class="price__table-row">
                       <td>с 01.04.18 по 19.04.18</td>
                       <td>12500₽</td>

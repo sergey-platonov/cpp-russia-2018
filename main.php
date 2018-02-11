@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title><?php tr('title')?></title>
+    <title><?php print tr('title')?></title>
     <?php partial("includes", $GLOBALS["project_root"]); ?>
 </head>
 <body class="cpp-r main">
@@ -11,7 +11,7 @@
     <div class="cpp-r_wrap">
         <!-- -->
         <h1 class="cpp-e_page-title">
-            <?php tr('title with br') ?>
+            <?php print tr('title with br') ?>
         </h1>
         <!-- -->
         <!-- -->
@@ -23,7 +23,7 @@
                         26
                     </div>
                     <div class="fact">
-                        <?php tr('best speakers')?>
+                        <?php print tr('best speakers')?>
                     </div>
                 </div>
                 <!-- -->
@@ -33,7 +33,7 @@
                         1250
                     </div>
                     <div class="fact">
-                        <?php tr('minutes') ?>
+                        <?php print tr('minutes') ?>
                     </div>
                 </div>
                 <!-- -->

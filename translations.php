@@ -1,6 +1,6 @@
 <?php
 
-function getLocale() {
+function get_locale() {
     if ($GLOBALS['locale'])
         $locale = $GLOBALS['locale'];
     else
@@ -26,7 +26,7 @@ function tr($text) {
     $TR['en']['title'] = 'C++ Russia 2018, 19-21 of April 2018';
 
     $TR['ru']['title with br'] = 'Конференция C++ Russia<br>Санкт-Петербург<br>19-21 апреля 2018';
-    $TR['en']['title with br'] = 'C++ Russia Conference<br>Saint Petersburg<br>19-21 April 2018';
+    $TR['en']['title with br'] = 'C++ Russia<br>Saint Petersburg<br>19-21 April 2018';
 
     $TR['ru']['not found'] = 'Запрашиваемая страница не найдена';
     $TR['en']['not found'] = 'Requested page not found';
@@ -36,7 +36,7 @@ function tr($text) {
 
     $TR['ru']['about conf'] = '<p>Конференция «C++ Russia» с блинами и матрёшками! Как всегда, лучшие докладчики<br>
 со всей страны на два дня. Конференция ориентирована на опытных разработчиков, никаких вводных лекций!</p>';
-    $TR['en']['about conf'] = '<p>C++ Russia with bliny and matryoshkas! Best speakers< from all over Russia for two days.
+    $TR['en']['about conf'] = '<p>C++ Russia with bliny and matryoshkas! Best speakers from all over Russia for two days.
  The conference is for experienced developers!</p>';
 
     $TR['ru']['location'] = '<p>Место проведения: Санкт-Петербург, ул. Кораблестроителей, 14, гостиница Прибалтийская.</p>';
@@ -67,7 +67,7 @@ next to C++ these days.</p>';
     $TR['en']['talks'] = 'Talks';
 
     $TR['ru']['apply bubble'] = 'Хочу стать<br>спикером!';
-    $TR['en']['apply bubble'] = '<big>Apply!</big>';
+    $TR['en']['apply bubble'] = '<font size="6">Apply!</font>';
 
     $TR['ru']['all talks'] = 'Все доклады';
     $TR['en']['all talks'] = 'All talks';
@@ -85,13 +85,25 @@ next to C++ these days.</p>';
     $TR['en']['schedule'] = 'Schedule';
 
     $TR['ru']['tickets'] = 'Билеты';
-    $TR['en']['Билеты'] = 'Tickets';
+    $TR['en']['tickets'] = 'Tickets';
 
     $TR['ru']['sponsors'] = 'Спонсоры';
     $TR['en']['sponsors'] = 'Sponsors';
 
-    $TR['ru']['contacts'] = '';
-    $TR['en'][''] = '';
+    $TR['ru']['tickets info'] = 'В этом году наших слушателей ждут<br> полезные мастерклассы, а для тех,<br>
+кто не может приехать на<br> конференцию, мы как всегда<br>
+организовали онлайн трансляцию. Присоединяйтесь!<br>
+Как всегда действует студенческая программа. <br>
+Для получения скидки пишите на <br><a href="mailto:students@cpp-russia.ru">students@cpp-russia.ru</a>';
+    $TR['en']['tickets info'] = 'Great talks, usueful workshops<br>if you can\'t make it, you can buy online ticket';
+
+    $TR['ru']['prices'] = 'Цены';
+    $TR['en']['prices'] = 'Prices';
+
+    $TR['ru']['about schedule'] = 'Первый день конференции 19 апреля -- это день мастер-классов. Вы можете посетить один четыре мастер-классов на ваш выбор. 
+    Обратите внимание: два мастер-класса проходят на английском языке. Мастер-класс это практическое занятие под руководством опытного программиста. Для работы
+    вам понадобится ноутбук, более подробные треования есть в описании каждого мастер-класса. На этот день продаётся отдельный билет.';
+    $TR['en']['about schedule'] = ' ';
 
     $TR['ru'][''] = '';
     $TR['en'][''] = '';
@@ -108,18 +120,9 @@ next to C++ these days.</p>';
     $TR['ru'][''] = '';
     $TR['en'][''] = '';
 
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
-
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
-
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
-
-    $locale = getLocale();
+    $locale = get_locale();
     if ($TR[$locale][$text])
-        echo $TR[$locale][$text];
+        return $TR[$locale][$text];
     else
-        echo $text;
+        return $text;
 }

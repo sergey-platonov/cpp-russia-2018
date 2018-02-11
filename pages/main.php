@@ -8,15 +8,15 @@
             </div>
             <div class="sidetext-right row-col">
                 <h2 class="cpp-e_block-title">
-                    <?php tr('about') ?>
+                    <?php print tr('about') ?>
                 </h2>
                 <div class="cpp-b_block-text">
-                    <?php tr('about conf') ?>
-                    <?php tr('location') ?>
-                    <?php tr('community') ?>
+                    <?php print tr('about conf') ?>
+                    <?php print tr('location') ?>
+                    <?php print tr('community') ?>
                 </div>
                 <div class="cpp-b_bordered-text">
-                    <?php tr('keynotes') ?>
+                    <?php print tr('keynotes') ?>
                 </div>
             </div>
         </div>
@@ -31,12 +31,12 @@
             <div class="cpp-b_talks_description row-col">
                 <a name="talks" class="cpp-e_hash-link"></a>
                 <h2 class="cpp-e_block-title">
-                    <?php tr('talks') ?>
+                    <?php print tr('talks') ?>
                 </h2>
                 <div class="cpp-b_block-text">
-                    <?php tr('apply') ?>
+                    <?php print tr('apply') ?>
                 </div>
-                <a class="bubble-link" href="mailto:talks@cpp-russia.ru"><?php tr('apply bubble') ?></a>
+                <a class="bubble-link" href="mailto:talks@cpp-russia.ru"><?php print tr('apply bubble') ?></a>
             </div>
             <!-- -->
             <!-- -->
@@ -44,7 +44,7 @@
             <!-- -->
         </div>
         <div class="cpp-b_content-centered">
-            <a class="cpp-e_green-button" href="/talks"><?php tr('all talks') ?></a>
+            <a class="cpp-e_green-button" href="/talks"><?php print tr('all talks') ?></a>
         </div>
     </div>
 </section>
@@ -59,11 +59,11 @@
             <div class="row-col">
                 <a name="contacts" class="cpp-e_hash-link"></a>
                 <h2 class="cpp-e_block-title">
-                    <?php tr('contacts') ?>
+                    <?php print tr('contacts') ?>
                 </h2>
                 <div class="cpp-b_block-text">
-                    <?php tr('location') ?>
-                    <?php tr('if you have questions') ?>
+                    <?php print tr('location') ?>
+                    <?php print tr('if you have questions') ?>
                 </div>
                 <div class="cpp-b_contacts">
                     <div class="cpp-e_contact phone">

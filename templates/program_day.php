@@ -39,7 +39,12 @@
                             if (property_exists($data->talk, "skype") && $data->talk->skype)
                                 $imgs = $imgs . '<img src="/app/build/template/skype.png" title="Доклад по скайпу">';
 
-							$rowText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href=".'
+                            if (get_locale() == 'ru')
+                                $speaker_name = $data->speaker->name;
+                            else
+                                $speaker_name = transliterator_transliterate('Cyrillic-Latin', $data->speaker->name);
+
+                            $rowText .= '<span class="speaker">' . $speaker_name . '</span>'.'<a class="talk-link" href=".'
                                 .$prefix.'/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a>'.$imgs.'</td>'."\n";
 							$rows[$data->talk->track] = $rowText;
 						}

@@ -149,19 +149,8 @@ function renderMainProgram($projectRoot)
 		
 }
 
-function is_non_russian_speaker($speaker) {
-    if (property_exists($speaker, "talk") && $speaker->talk) {
-        $talk = $speaker->talk;
-        if (property_exists($talk, "language") && $speaker->language) {
-            print $talk->language . '<br>';
-            return $talk->language != "russian";
-        }
-    }
-    return false;
-}
-
 function renderFewTeasers($requiredSize) {
-    $locale = getLocale();
+    $locale = get_locale();
     if ($locale == "ru") {
         $speakers = $GLOBALS["speakers"];
     } else {
@@ -172,8 +161,7 @@ function renderFewTeasers($requiredSize) {
                     return $talk->language != "russian";
             }
             return false;
-        }
-        );
+        });
     }
     if (count($speakers) <= $requiredSize) {
         foreach($speakers as $speaker) {
@@ -188,4 +176,38 @@ function renderFewTeasers($requiredSize) {
             }
         }
     }
+}
+
+function set_locale() {
+    $locale = htmlspecialchars($_GET["lang"]);
+    $GLOBALS["locale_set"] = !!$locale;
+    if ($locale) {
+        if ($locale != "ru")
+            $GLOBALS["locale"] = "en";
+        else
+            $GLOBALS["locale"] = "ru";
+    } else {
+        $GLOBALS["locale"] = substr(locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']), 0, 2);
+    }
+}
+
+function is_locale_set() {
+    return $GLOBALS["locale_set"];
+}
+
+function lang_prefix() {
+    if (is_locale_set())
+        return '?lang=' . $GLOBALS["locale"];
+    else
+        return '';
+}
+
+function render_header_link($text) {
+    $translated = tr($text);
+    $str ="<a href='/#" . $text . lang_prefix() . "'>". $translated . "</a>";
+    print $str;
+}
+
+function render_root_link($text) {
+    print '<a href="/' . lang_prefix() . '">'. tr($text) . '</a>';
 }
