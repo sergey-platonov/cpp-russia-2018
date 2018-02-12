@@ -38,7 +38,7 @@
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
-                    <td colspan="4">Регистрация на мастер-классы</td>
+                    <td colspan="4"><?php print tr('workshop registration') ?></td>
                 </tr>
                 <tr>
                     <td>10:00 - 12:00</td>
@@ -49,7 +49,7 @@
                 </tr>
                 <tr class="gray">
                     <td>12:00 - 12:45</td>
-                    <td colspan="4">Кофе-брейк</td>
+                    <td colspan="4"><?php print tr('coffee break') ?></td>
                 </tr>
                 <tr>
                     <td>12:45 - 14:45</td>
@@ -60,7 +60,7 @@
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
-                    <td colspan="4">Обед</td>
+                    <td colspan="4"><?php print tr('dinner') ?></td>
                 </tr>
                 <tr>
                     <td>16:00 - 18:00</td>
@@ -71,7 +71,7 @@
                 </tr>
                 <tr class="gray">
                     <td>18:00 - 20:00</td>
-                    <td colspan="4">Предрегистрация на конференцию</td>
+                    <td colspan="4"><?php print tr('preregistration') ?></td>
                 </tr>
                 </tbody>
             </table>

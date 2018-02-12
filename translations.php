@@ -105,8 +105,26 @@ next to C++ these days.</p>';
     вам понадобится ноутбук, более подробные треования есть в описании каждого мастер-класса. На этот день продаётся отдельный билет.';
     $TR['en']['about schedule'] = ' ';
 
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
+    $TR['ru']['more'] = 'Подробнее >>';
+    $TR['en']['more'] = 'More >>';
+
+    $TR['ru']['workshop registration'] = 'Регистрация на мастер-классы';
+    $TR['en']['workshop registration'] = 'Registration for a workshops';
+
+    $TR['ru']['preregistration'] = 'Предрегистрация на конференцию';
+    $TR['en']['preregistration'] = 'Pre-registration for a conference';
+
+    $TR['ru']['coffee break'] = 'Кофе-брейк';
+    $TR['en']['coffee break'] = 'Coffee break';
+
+    $TR['ru']['dinner'] = 'Обед';
+    $TR['en']['dinner'] = 'Lunch break';
+
+    $TR['ru']['registration'] = 'Регистрация';
+    $TR['en']['registration'] = 'Registration';
+
+    $TR['ru']['skype talk'] = 'Доклад по скайпу';
+    $TR['en']['skype talk'] = 'Skype talk';
 
     $TR['ru'][''] = '';
     $TR['en'][''] = '';
@@ -114,11 +132,6 @@ next to C++ these days.</p>';
     $TR['ru'][''] = '';
     $TR['en'][''] = '';
 
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
-
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
 
     $locale = get_locale();
     if ($TR[$locale][$text])

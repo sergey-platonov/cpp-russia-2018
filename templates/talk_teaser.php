@@ -34,6 +34,8 @@
     </div>
 
     <div class="talk-footer">
-        <a class="talk-link" href="<?php echo "/talks/".$speaker->speaker->dirname; ?>">Подробнее >></a>
+        <?php
+        print "<a class=\"talk-link\" href=\"/talks/" . $speaker->speaker->dirname . lang_prefix() . "\">" . tr("more") .  "</a>"
+        ?>
     </div>
 </div>

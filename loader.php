@@ -204,7 +204,7 @@ function lang_prefix() {
 
 function render_header_link($text) {
     $translated = tr($text);
-    $str ="<a href='/#" . $text . lang_prefix() . "'>". $translated . "</a>";
+    $str ="<a href='#" . $text . "'>". $translated . "</a>";
     print $str;
 }
 

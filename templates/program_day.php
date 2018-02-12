@@ -16,6 +16,7 @@
 				</tr>
 				<?php
 				$prefix = $GLOBALS['prefix'];
+				$locale = get_locale();
 				foreach ($timeArr as $time) {
 					$classSet = false;
 					$output = "";
@@ -24,7 +25,6 @@
 					$rowsText = "";
 					$rows = [];
 					foreach ($schedule[$day][$time] as $data) {
-//					    echo $time.'<br>';
 						$colspan = property_exists($data->talk, 'colspan') ? $data->talk->colspan : 1;
 						$rowText = '';
 						if ($colspan > 1)
@@ -33,23 +33,25 @@
 							$rowText .= '<td>';
 						if (!$data->system) {
 						    $imgs = '';
-                            if (property_exists($data->talk, "language") && $data->talk->language == "english")
-                                $imgs = '<img src="/app/build/template/eng.png" title="Доклад на английском языке">';
+						    if ($locale == "ru") {
+                                $speaker_name = $data->speaker->name;
+                                if (property_exists($data->talk, "language") && $data->talk->language == "english")
+                                    $imgs = '<img src="/app/build/template/eng.png" title="Доклад на английском языке">';
+                            } else {
+                                $speaker_name = transliterator_transliterate('Cyrillic-Latin', $data->speaker->name);
+                                if (!property_exists($data->talk, "language") || $data->talk->language != "english")
+                                    $imgs = '<img src="/app/build/template/rus.png" title="Talk is in Russian">';
+                            }
                             $skype = '';
                             if (property_exists($data->talk, "skype") && $data->talk->skype)
-                                $imgs = $imgs . '<img src="/app/build/template/skype.png" title="Доклад по скайпу">';
-
-                            if (get_locale() == 'ru')
-                                $speaker_name = $data->speaker->name;
-                            else
-                                $speaker_name = transliterator_transliterate('Cyrillic-Latin', $data->speaker->name);
+                                $imgs = $imgs . '<img src="/app/build/template/skype.png" title="' . tr("skype talk") . '">';
 
                             $rowText .= '<span class="speaker">' . $speaker_name . '</span>'.'<a class="talk-link" href=".'
                                 .$prefix.'/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a>'.$imgs.'</td>'."\n";
 							$rows[$data->talk->track] = $rowText;
 						}
 						else {
-							$rowsText .= $rowText . $data->talk->text."</td>\n";
+							$rowsText .= $rowText . tr($data->talk->text)."</td>\n";
 						}
 						if (property_exists($data->talk, "class") && !$classSet) {
 							$firstTr .= ' class = "'.$data->talk->class.'"';
