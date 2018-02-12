@@ -95,7 +95,7 @@ next to C++ these days.</p>';
 организовали онлайн трансляцию. Присоединяйтесь!<br>
 Как всегда действует студенческая программа. <br>
 Для получения скидки пишите на <br><a href="mailto:students@cpp-russia.ru">students@cpp-russia.ru</a>';
-    $TR['en']['tickets info'] = 'Great talks, usueful workshops<br>if you can\'t make it, you can buy online ticket';
+    $TR['en']['tickets info'] = 'Great talks, useful workshops<br>if you can\'t make it, online tickets are available';
 
     $TR['ru']['prices'] = 'Цены';
     $TR['en']['prices'] = 'Prices';
@@ -103,7 +103,7 @@ next to C++ these days.</p>';
     $TR['ru']['about schedule'] = 'Первый день конференции 19 апреля -- это день мастер-классов. Вы можете посетить один четыре мастер-классов на ваш выбор. 
     Обратите внимание: два мастер-класса проходят на английском языке. Мастер-класс это практическое занятие под руководством опытного программиста. Для работы
     вам понадобится ноутбук, более подробные треования есть в описании каждого мастер-класса. На этот день продаётся отдельный билет.';
-    $TR['en']['about schedule'] = ' ';
+    $TR['en']['about schedule'] = '';
 
     $TR['ru']['more'] = 'Подробнее >>';
     $TR['en']['more'] = 'More >>';
