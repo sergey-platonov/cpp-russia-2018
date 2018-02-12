@@ -26,40 +26,40 @@
                   <table class="price__table">
 
                     <tr class="price__table-row">
-                      <th>Дата покупки</th>
-                      <th>Входной билет</th>
-                      <th>Мастер-класс</th>
-                      <th>Онлайн</th>
+                      <th><?php print tr('date of purchase') ?></th>
+                      <th><?php print tr('ticket') ?></th>
+                      <th><?php print tr('workshop ticket') ?></th>
+                      <th><?php print tr('online ticket') ?></th>
                     </tr>
                     <?php if (new DateTime("now") < new DateTime("2018-02-01")):?>
                     <tr class="price__table-row">
-                      <td>с до 31.01.18</td>
-                      <td>9500₽</td>
-                      <td>8000₽</td>
-                      <td>3000₽</td>
+                      <td><?php print tr('2018-02-01') ?></td>
+                      <td><?php print tr("9500₽") ?>
+                      <td><?php print tr("8000₽") ?>
+                      <td><?php print tr("3000₽") ?>
                     </tr>
                     <?php endif; ?>
                     <?php if (new DateTime("now") < new DateTime("2018-03-01")):?>
                     <tr class="price__table-row">
-                      <td>с 01.02.18 по 28.02.18</td>
-                      <td>10500₽</td>
-                      <td>9000₽</td>
-                      <td>3000₽</td>
+                      <td><?php print tr('2018-03-01') ?></td>
+                      <td><?php print tr("10500₽") ?>
+                      <td><?php print tr("9000₽") ?>
+                      <td><?php print tr("3000₽") ?>
                     </tr>
                     <?php endif; ?>
                     <?php if (new DateTime("now") < new DateTime("2018-04-01")):?>
                     <tr class="price__table-row">
-                      <td>с 01.03.18 по 31.03.18</td>
-                      <td>11500₽</td>
-                      <td>10000₽</td>
-                      <td>3000₽</td>
+                      <td><?php print tr('2018-04-01') ?></td>
+                      <td><?php print tr("11500₽") ?>
+                      <td><?php print tr("10000₽") ?>
+                      <td><?php print tr("3000₽") ?>
                     </tr>
                     <?php endif; ?>
                     <tr class="price__table-row">
-                      <td>с 01.04.18 по 19.04.18</td>
-                      <td>12500₽</td>
-                      <td>11000₽</td>
-                      <td>3000₽</td>
+                      <td><?php print tr('after 2018-04-01') ?></td>
+                      <td><?php print tr("12500₽") ?>
+                      <td><?php print tr("11000₽") ?>
+                      <td><?php print tr("3000₽") ?>
                     </tr>
                   </table>
                 </div>
