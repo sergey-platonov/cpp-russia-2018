@@ -1,12 +1,12 @@
 {
   "speaker": {
-    "name": "Jon Kalb"
+    "name": "Andrei Alexandrescu"
   },
   "talk": {
     "date": "20/04/18",
     "track": "TRACK C",
-    "time": "10:00 - 12:00",
-    "title": "C++ Today: The Beast is Back",
+    "time": "17:00 - 18:00",
+    "title": "Fastware",
     "colspan": 4,
     "language": "english"
   }
