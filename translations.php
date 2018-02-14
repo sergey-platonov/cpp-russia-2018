@@ -23,10 +23,10 @@ function tr($text) {
     $TR['en']['minutes'] = 'minutes<br>for experienced<br>developers';
 
     $TR['ru']['title'] = 'Конференция C++ Russia, 19-21 апреля 2018';
-    $TR['en']['title'] = 'C++ Russia 2018, 19-21 of April 2018';
+    $TR['en']['title'] = 'C++ Russia 2018, April 19-21 2018';
 
     $TR['ru']['title with br'] = 'Конференция C++ Russia<br>Санкт-Петербург<br>19-21 апреля 2018';
-    $TR['en']['title with br'] = 'C++ Russia<br>Saint Petersburg<br>19-21 April 2018';
+    $TR['en']['title with br'] = 'C++ Russia<br>Saint-Petersburg, Russia<br>April 19-21 2018';
 
     $TR['ru']['not found'] = 'Запрашиваемая страница не найдена';
     $TR['en']['not found'] = 'Requested page not found';
@@ -40,34 +40,34 @@ function tr($text) {
  The conference is for experienced developers!</p>';
 
     $TR['ru']['location'] = '<p>Место проведения: Санкт-Петербург, ул. Кораблестроителей, 14, гостиница Прибалтийская.</p>';
-    $TR['en']['location'] = '<p>Location: Saint Petersburg, Park Inn Pribalitiyskaya.</p>';
+    $TR['en']['location'] = '<p>Location: Saint Petersburg, Park Inn Pribalitiyskaya Hotel.</p>';
 
     $TR['ru']['community'] = '<p>В течении года сообщество проводит встречи в разных городах России: Москве, Санкт-Петербурге, 
 Новосибирске, Екатеринбурге, Нижнем Новгороде, Саратове.<br>На встречах выступают докладчики из разных городов и стран.</p>';
     $TR['en']['community'] = '<p>By now the Group has set up meetings in several cities of Russia: Moscow, Saint-Petersburg, 
-Yekaterinburg, Nizhny Novgorod, Kazan and Saratov. We invite speakers from places other than meeting site.</p>';
+Yekaterinburg, Nizhny Novgorod, Kazan and Saratov. We invite speakers from variety of cities and from other countries as well.</p>';
 
     $TR['ru']['keynotes'] = 'Открывать конференцию будет Jon Kalb, разработчик с 25-летним стажем<br>
 В течении этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
 Yahoo и других компаниях. Jon -- организатор конференции CppCon. Автор книги <br>
 C++ Today: The Beast is Back.';
-    $TR['en']['keynotes'] = 'Keynote speaker is Jon Kalb. He has been programming in C++ for two and a half decades.<br> 
-During the last two decades he has written C++ for Amazon, Apple, Dow Chemical, Intuit, Lotus, Microsoft, Netscape, Sun, 
-Yahoo! and a number of companies that you\'ve not heard of. Jon is chairman of CppCon and author of the \'C++ Today: The Beast is Back\'';
+    $TR['en']['keynotes'] = 'Keynote speaker will be Jon Kalb, the C++ developer with 25-years of expirience.<br> 
+During that time he was programming with C++ for Amazon, Apple, Dow Chemical, Intuit, Lotus, Microsoft, Netscape, Sun, 
+Yahoo!, and a couple of companies you\'ve never heard about. Jon is the chairman of CppCon and the author of the "C++ Today: The Beast is Back" book.';
 
     $TR['ru']['apply'] = '<p><strong>Подать заявку на доклад можно<br>до 15 марта 2018 года.</strong></p>
 <p>Как обычно, продолжительность доклада не должна превышать 50 минут (с учетом вопросов). Мы рады докладам о C++(11/14/17), 
 STL, Boost, Qt, любых других библиотеках, тестировании и сборке крупных проектов на С++, асинхронности и конкурентности, etc.</p>';
-    $TR['en']['apply'] = '<p><strong>You can apply until<br>15 of March 2018.</strong></p>
-<p>Duration of a talk can not exceed 50 minutes (with questions). We\'re pleased to hear talks about C++, STL, Boost, Qt 
-and any other libraries. About testing and building C++ projects. About concurrency, lock-free and any other hype word you hear 
+    $TR['en']['apply'] = '<p><strong>You can offer your talk until<br>15 of March 2018.</strong></p>
+<p>Your talk duration should be up to 50 minutes (including time for attendees\' questions). We welcome talks on C++, STL, Boost, Qt, 
+or any other C++ library, testing and building C++ projects, concurrency, lock-free, or any other hype word you hear 
 next to C++ these days.</p>';
 
     $TR['ru']['talks'] = 'Доклады';
     $TR['en']['talks'] = 'Talks';
 
     $TR['ru']['apply bubble'] = 'Хочу стать<br>спикером!';
-    $TR['en']['apply bubble'] = '<font size="6">Apply!</font>';
+    $TR['en']['apply bubble'] = '<font size="6">Offer a talk!</font>';
 
     $TR['ru']['all talks'] = 'Все доклады';
     $TR['en']['all talks'] = 'All talks';
@@ -76,7 +76,7 @@ next to C++ these days.</p>';
     $TR['en']['contacts'] = 'Contacts';
 
     $TR['ru']['if you have questions'] = '<p>Если у Вас есть вопросы,<br>их можно задать по телефону или почте </p>';
-    $TR['en']['if you have questions'] = '<p>If you have questions,<br>you can ask them via phone or email</p>';
+    $TR['en']['if you have questions'] = '<p>If you have any questions,<br>please ask them via phone or email</p>';
 
     $TR['ru']['about'] = 'О конференции';
     $TR['en']['about'] = 'About';
@@ -88,14 +88,14 @@ next to C++ these days.</p>';
     $TR['en']['tickets'] = 'Tickets';
 
     $TR['ru']['sponsors'] = 'Спонсоры';
-    $TR['en']['sponsors'] = 'Sponsors';
+    $TR['en']['sponsors'] = 'Partners';
 
     $TR['ru']['tickets info'] = 'В этом году наших слушателей ждут<br> полезные мастерклассы, а для тех,<br>
 кто не может приехать на<br> конференцию, мы как всегда<br>
 организовали онлайн трансляцию. Присоединяйтесь!<br>
 Как всегда действует студенческая программа. <br>
 Для получения скидки пишите на <br><a href="mailto:students@cpp-russia.ru">students@cpp-russia.ru</a>';
-    $TR['en']['tickets info'] = 'Great talks, useful workshops<br>if you can\'t make it, online tickets are available';
+    $TR['en']['tickets info'] = 'Great talks, useful workshops.<br>We also offer an option to attend us online.';
 
     $TR['ru']['prices'] = 'Цены';
     $TR['en']['prices'] = 'Prices';
@@ -109,10 +109,10 @@ next to C++ these days.</p>';
     $TR['en']['more'] = 'More >>';
 
     $TR['ru']['workshop registration'] = 'Регистрация на мастер-классы';
-    $TR['en']['workshop registration'] = 'Registration for a workshops';
+    $TR['en']['workshop registration'] = 'Registration to the workshops';
 
     $TR['ru']['preregistration'] = 'Предрегистрация на конференцию';
-    $TR['en']['preregistration'] = 'Pre-registration for a conference';
+    $TR['en']['preregistration'] = 'Pre-registration to the talks';
 
     $TR['ru']['coffee break'] = 'Кофе-брейк';
     $TR['en']['coffee break'] = 'Coffee break';
@@ -130,7 +130,7 @@ next to C++ these days.</p>';
     $TR['en']['date of purchase'] = 'Date of purchase';
 
     $TR['ru']['ticket'] = 'Входной билет';
-    $TR['en']['ticket'] = 'Conference Ticket';
+    $TR['en']['ticket'] = 'Conference ticket';
 
     $TR['ru']['workshop ticket'] = 'Мастер-класс';
     $TR['en']['workshop ticket'] = 'Workshop ticket';
