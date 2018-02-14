@@ -1,0 +1,3 @@
+Optimization — making code faster — is an essential ingredient of modern computing. The speed of light is limited, so we're unable to increase computer clock speed anymore; in other news, the matter is composed of discrete atoms so we can't make circuits much smaller than they already are. That means more speed for essential tasks — ranging from speech recognition to self-driving cars to General Artificial Intelligence — is to be found in people's minds.
+
+This talk discusses, with simple examples, a few algorithm design principles that can be applied consistently to improve, or sometimes entirely redesign, algorithms for better performance.
