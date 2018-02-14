@@ -65,9 +65,11 @@
                 </div>
                 <!-- /Таблица с ценами -->
                 <div class="cpp-b_only-desktop">
-                    <a href="https://c-user-group-russia.timepad.ru/event/593746/" data-twf-placeholder="yes">Перейтик заказу билетов</a>
-                    <script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="3453"
-                        data-twf2s-event--id="593746" data-timepad-widget-v2="event_register"
+                    <a href=<?php print '"https://c-user-group-russia.timepad.ru/event/' . tr('event-id') . '/"' ?> data-twf-placeholder="yes">
+                        <?php print tr('buy tickets') ?>
+                    </a>
+                    <script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized=<?php print tr('data-timepad-customized') ?>
+                        data-twf2s-event--id=<?php print '"' . tr('event-id') . '"' ?> data-timepad-widget-v2="event_register"
                         src="https://timepad.ru/js/tpwf/loader/min/loader.js">
                         (function() {
                             return {
@@ -81,7 +83,9 @@
                     </script>
                 </div>
                 <div class="cpp-b_only-mobile">
-                    <a style="display: block;    margin: 0 auto;" class="cpp-e_green-button" href="https://c-user-group-russia.timepad.ru/event/593746/">Купить билет</a>
+                    <a style="display: block;    margin: 0 auto;" class="cpp-e_green-button" href=<?php print '"https://c-user-group-russia.timepad.ru/event/' . tr('event-id') . '/"' ?> >
+                        <?php print tr('buy tickets') ?>
+                    </a>
                 </div>
             </div>
         </div>
