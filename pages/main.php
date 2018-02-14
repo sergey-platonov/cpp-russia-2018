@@ -44,7 +44,7 @@
             <!-- -->
         </div>
         <div class="cpp-b_content-centered">
-            <a class="cpp-e_green-button" href="/talks"><?php print tr('all talks') ?></a>
+            <a class="cpp-e_green-button" href="<?php echo $GLOBALS["prefix"] . "/talks" . lang_prefix()?>"><?php print tr('all talks') ?></a>
         </div>
     </div>
 </section>

@@ -19,17 +19,19 @@
                 </div>
                 <div class="sidetext-right row-col">
                     <h1 class="cpp-e_block-title mod-big">
-                        Доклады
+                        <?php print tr('talks') ?>
                     </h1>
                     <div class="cpp-b_block-text">
-                        <p>Лучшие докладчики со всей страны за два дня. Если вам тоже есть, о чём рассказать отправляйте заявку. Как обычно, продолжительность доклада не должна превышать 50 минут (с учетом вопросов).</p>
-                        <p>Мы рады докладам о C++(11/14/17), STL, Boost, Qt, любых других библиотеках, тестировании и сборке крупных проектов на С++, асинхронности и конкурентности, etc.</p>
+                        <?php print tr('talks about') ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <?php require __DIR__ . '/../pages/talks.php'; ?>
+    <?php
+        $arrSpeakers = $GLOBALS["speakers"];
+        require __DIR__ . '/../pages/talks.php';
+    ?>
     <?php partial(("partials/sponsors"), $GLOBALS["project_root"]); ?>
 </main>
 <?php partial(("templates/footer"), $GLOBALS["project_root"]); ?>

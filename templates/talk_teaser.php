@@ -20,7 +20,14 @@
         </div>
     </div>
     <div class="talk-speaker-name">
-        <?php echo $speaker->speaker->name; ?>
+        <?php
+        $locale = get_locale();
+        if ($locale == "ru")
+            $speaker_name = $speaker->speaker->name;
+        else
+            $speaker_name = transliterator_transliterate('Cyrillic-Latin', $speaker->speaker->name);
+        echo $speaker_name;
+        ?>
     </div>
     <div class="talk-content-fixed">
         <div class="talk-title">

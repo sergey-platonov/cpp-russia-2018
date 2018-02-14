@@ -31,12 +31,9 @@ function tr($text) {
     $TR['ru']['not found'] = 'Запрашиваемая страница не найдена';
     $TR['en']['not found'] = 'Requested page not found';
 
-    $TR['ru']['about'] = 'О конференции';
-    $TR['en']['about'] = 'About';
-
     $TR['ru']['about conf'] = '<p>Конференция «C++ Russia» с блинами и матрёшками! Как всегда, лучшие докладчики<br>
 со всей страны на два дня. Конференция ориентирована на опытных разработчиков, никаких вводных лекций!</p>';
-    $TR['en']['about conf'] = '<p>C++ Russia with bliny and matryoshkas! Best speakers from all over Russia for two days.
+    $TR['en']['about conf'] = '<p>C++ Russia with bliny and matryoshkas! With great guests from around the world for two days.
  The conference is for experienced developers!</p>';
 
     $TR['ru']['location'] = '<p>Место проведения: Санкт-Петербург, ул. Кораблестроителей, 14, гостиница Прибалтийская.</p>';
@@ -44,8 +41,8 @@ function tr($text) {
 
     $TR['ru']['community'] = '<p>В течении года сообщество проводит встречи в разных городах России: Москве, Санкт-Петербурге, 
 Новосибирске, Екатеринбурге, Нижнем Новгороде, Саратове.<br>На встречах выступают докладчики из разных городов и стран.</p>';
-    $TR['en']['community'] = '<p>By now the Group has set up meetings in several cities of Russia: Moscow, Saint-Petersburg, 
-Yekaterinburg, Nizhny Novgorod, Kazan and Saratov. We invite speakers from variety of cities and from other countries as well.</p>';
+    $TR['en']['community'] = '<p>So far we held conferences in several cities in Russia: Moscow, Saint-Petersburg, 
+Yekaterinburg, Nizhny Novgorod, Kazan, Tomsk and Saratov. We invite speakers from variety of cities and from other countries as well.</p>';
 
     $TR['ru']['keynotes'] = 'Открывать конференцию будет Jon Kalb, разработчик с 25-летним стажем<br>
 В течении этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
@@ -67,7 +64,7 @@ next to C++ these days.</p>';
     $TR['en']['talks'] = 'Talks';
 
     $TR['ru']['apply bubble'] = 'Хочу стать<br>спикером!';
-    $TR['en']['apply bubble'] = '<font size="6">Aplly!</font>';
+    $TR['en']['apply bubble'] = 'Submit a talk!';
 
     $TR['ru']['all talks'] = 'Все доклады';
     $TR['en']['all talks'] = 'All talks';
@@ -78,7 +75,7 @@ next to C++ these days.</p>';
     $TR['ru']['if you have questions'] = '<p>Если у Вас есть вопросы,<br>их можно задать по телефону или почте </p>';
     $TR['en']['if you have questions'] = '<p>If you have any questions,<br>please ask them via phone or email</p>';
 
-    $TR['ru']['about'] = 'О конференции';
+    $TR['ru']['about'] = ' ';
     $TR['en']['about'] = 'About';
 
     $TR['ru']['schedule'] = 'Программа';
@@ -187,18 +184,22 @@ next to C++ these days.</p>';
     $TR['ru']['event-id'] = '593746';
     $TR['en']['event-id'] = '665219';
 
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
+    $TR['ru']['platinum sponsors'] = 'Platinum спонсор';
+    $TR['en']['platinum sponsors'] = 'Platinum sponsor';
 
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
+    $TR['ru']['gold sponsors'] = 'Gold спонсоры';
+    $TR['en']['gold sponsors'] = 'Gold sponsors';
 
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
+    $TR['ru']['silver sponsors'] = 'Silver спонсоры';
+    $TR['en']['silver sponsors'] = 'Silver sponsors';
 
-    $TR['ru'][''] = '';
-    $TR['en'][''] = '';
+    $TR['ru']['community sponsors'] = 'Community спонсоры';
+    $TR['en']['community sponsors'] = 'Community sponsors';
 
+    $TR['ru']['talks about'] = '<p>Лучшие докладчики со всей мира, два насыщенных дня. Если вам тоже есть, о чём рассказать отправляйте заявку. Как обычно, продолжительность доклада не должна превышать 50 минут (с учетом вопросов).</p>
+<p>Мы рады докладам о C++(11/14/17), STL, Boost, Qt, любых других библиотеках, тестировании и сборке крупных проектов на С++, асинхронности и конкурентности, etc.</p>';
+    $TR['en']['talks about'] = '<p>Great guests from around the world, two days full of C++. If you applying for a talk, please, keep im mind that usual duration of a talk is 50 minutes</p>
+<p>We\'re glad to talks abot C++, STL, Boost, Qt, any other open source frameworks, testing and building C++ projects, concurrency, etc</p>';
 
     $locale = get_locale();
     if ($TR[$locale][$text])

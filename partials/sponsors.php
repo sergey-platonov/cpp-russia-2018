@@ -3,7 +3,7 @@
     <div class="cpp-r_wrap">
         <a name="sponsors" class="cpp-e_hash-link"></a>
         <h2 class="cpp-e_block-title">
-            Platinum спонсор
+            <?php print tr('platinum sponsors') ?>
         </h2>
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->
@@ -20,7 +20,7 @@
 <section class="cpp-b_section">
     <div class="cpp-r_wrap">
         <h2 class="cpp-e_block-title">
-            Gold спонсоры
+            <?php print tr('gold sponsors') ?>
         </h2>
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->
@@ -81,7 +81,7 @@
 <section class="cpp-b_section">
     <div class="cpp-r_wrap">
         <h2 class="cpp-e_block-title">
-            Silver спонсоры
+            <?php print tr('silver sponsors') ?>
         </h2>
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->
@@ -97,7 +97,7 @@
 <section class="cpp-b_section">
     <div class="cpp-r_wrap">
         <h2 class="cpp-e_block-title">
-            Community спонсоры
+            <?php print tr('community sponsors') ?>
         </h2>
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->

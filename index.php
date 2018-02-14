@@ -15,7 +15,7 @@ $router->map( 'GET',  '/[i:year]/', map_home );
 $router->map( 'GET',  '/', map_home );
 
 // map all talks page
-function map_all_talks($year) {
+function map_all_talks() {
     set_locale();
     $GLOBALS["prefix"] = '';
     require __DIR__ . '/templates/talks.php';
