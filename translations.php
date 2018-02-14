@@ -16,7 +16,7 @@ function get_locale() {
 
 function tr($text) {
     $TR['ru']['best speakers'] = 'лучших докладчиков';
-    $TR['en']['best speakers'] = 'best speakers';
+    $TR['en']['best speakers'] = 'great speakers';
 
 
     $TR['ru']['minutes'] = 'минут информации<br>для опытных<br>разработчиков';
