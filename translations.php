@@ -87,15 +87,38 @@ next to C++ these days.</p>';
     $TR['ru']['sponsors'] = 'Спонсоры';
     $TR['en']['sponsors'] = 'Partners';
 
-    $TR['ru']['tickets info'] = 'В этом году наших слушателей ждут<br> полезные мастерклассы, а для тех,<br>
-кто не может приехать на<br> конференцию, мы как всегда<br>
-организовали онлайн трансляцию. Присоединяйтесь!<br>
-Как всегда действует студенческая программа. <br>
+    $TR['ru']['tickets info'] = 'В этом году наших слушателей ждут<br> полезные мастерклассы, а для тех,
+кто не может приехать на<br> конференцию, мы как всегда
+организовали онлайн трансляцию. Присоединяйтесь!<br><br>
+Как всегда действует студенческая программа.<br>
 Для получения скидки пишите на <br><a href="mailto:students@cpp-russia.ru">students@cpp-russia.ru</a>';
     $TR['en']['tickets info'] = 'Great talks, useful workshops.<br>We also offer an option to attend us online.';
 
+    $TR['ru']['tickets entry'] = 'Входной билет';
+    $TR['en']['tickets entry'] = 'Entry ticket';
+    $TR['ru']['tickets entry text'] = 'Даёт право на посещения основной программы конференции 20-21 апреля. Включает в себя питание (кофе-брейк, обед). После конференции Вам будут доступны записи всех докладов. Записи докладов будет доступна в течении двух месяцев.';
+    $TR['en']['tickets entry text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+
+    $TR['ru']['tickets master'] = 'Мастер-класс';
+    $TR['en']['tickets master'] = 'Master';
+    $TR['ru']['tickets master text'] = 'Даёт право на посещение одного мастер-класса 19 апреля по Вашему выбору. Включает в себя питание (кофе-брейк, обед).';
+    $TR['en']['tickets master text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+
+    $TR['ru']['tickets online'] = 'Онлайн';
+    $TR['en']['tickets online'] = 'Online';
+    $TR['ru']['tickets online text'] = 'Вы получаете ссылку, по которой сможете смотреть любой трек, по выбору. Записи докладов будет доступна в течении двух месяцев.';
+    $TR['en']['tickets online text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+
+    $TR['ru']['tickets block'] = 'Block';
+    $TR['en']['tickets block'] = 'Block';
+    $TR['ru']['tickets block text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+    $TR['en']['tickets block text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+
     $TR['ru']['prices'] = 'Цены';
     $TR['en']['prices'] = 'Prices';
+
+    $TR['ru']['buy ticket'] = 'Купить билет';
+    $TR['en']['buy ticket'] = 'Buy ticket';
 
     $TR['ru']['about schedule'] = 'Первый день конференции 19 апреля -- это день мастер-классов. Вы можете посетить один четыре мастер-классов на ваш выбор. 
     Обратите внимание: два мастер-класса проходят на английском языке. Мастер-класс это практическое занятие под руководством опытного программиста. Для работы
