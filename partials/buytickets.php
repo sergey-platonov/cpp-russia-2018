@@ -15,6 +15,38 @@
                 <div class="online">
                     <img src="/app/frontend/template/elem-buy-tickets.svg" alt="">
                 </div>
+                <div class="cpp-b_block-text">
+                    <h3 class="cpp-b_block-text-title">
+                        <?php print tr('tickets entry'); ?>
+                    </h3>
+                    <p>
+                        <?php print tr('tickets entry text'); ?>
+                    </p>
+                </div>
+                <div class="cpp-b_block-text">
+                    <h3 class="cpp-b_block-text-title">
+                        <?php print tr('tickets master'); ?>
+                    </h3>
+                    <p>
+                        <?php print tr('tickets master text'); ?>
+                    </p>
+                </div>
+                <div class="cpp-b_block-text">
+                    <h3 class="cpp-b_block-text-title">
+                        <?php print tr('tickets online'); ?>
+                    </h3>
+                    <p>
+                        <?php print tr('tickets online text'); ?>
+                    </p>
+                </div>
+                <div class="cpp-b_block-text">
+                    <h3 class="cpp-b_block-text-title">
+                        <?php print tr('tickets block'); ?>
+                    </h3>
+                    <p>
+                        <?php print tr('tickets block text'); ?>
+                    </p>
+                </div>
             </div>
             <div class="buy-tickets-right row-col">
                 <?php
@@ -65,6 +97,9 @@
                 </div>
                 <!-- /Таблица с ценами -->
                 <div class="cpp-b_only-desktop">
+                    <h2 class="widget__title">
+                        <?php print tr('buy ticket'); ?>
+                    </h2>
                     <a href=<?php print '"https://c-user-group-russia.timepad.ru/event/' . tr('event-id') . '/"' ?> data-twf-placeholder="yes">
                         <?php print tr('buy tickets') ?>
                     </a>

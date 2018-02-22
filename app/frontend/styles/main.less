@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
         align-items: flex-start;
         padding-bottom: 0;
         &:first-child {
-         padding-left: .8rem;
+          padding-left: .8rem;
         }
       }
     }
@@ -409,9 +409,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.1rem;
 }
 .cpp-b_program-day {
- .date {
+  .date {
 
- }
+  }
 }
 .cpp-b_buy-tickets {
   .buy-tickets-left {
@@ -422,13 +422,19 @@ h1, h2, h3, h4, h5, h6 {
     .online {
       display: flex;
       width: 100%;
+      margin-bottom: 2.9rem;
+      margin-top: 2em;
       img {
         width: 19.313rem;
         height: 10.938rem;
       }
     }
     .cpp-b_block-text {
-      margin-bottom: 1.6rem;
+      max-width: 80%;
+      &-title {
+        font-size: 1.063rem;
+        color: @cpp_color;
+      }
     }
   }
   .buy-tickets-right {
@@ -836,7 +842,7 @@ only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and 
 
 // MOBILE
 @media only screen and (orientation: portrait) and (max-device-width: 9in),
-       only screen and (orientation: landscape) and (max-device-width: 8in)
+only screen and (orientation: landscape) and (max-device-width: 8in)
 {
   .cpp-b_main-menu {
     width: 4rem;
@@ -927,7 +933,7 @@ only screen and (min-device-width : 1366px) and (max-device-width : 1024px) and 
   width: 100%;
   margin-bottom: 60px;
   padding-top: 1rem;
-  
+
   &__title {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
@@ -935,7 +941,7 @@ only screen and (min-device-width : 1366px) and (max-device-width : 1024px) and 
     line-height: 2.375rem;
     color: #4f4f4f;
   }
-  
+
   &__table {
     width: 100%;
     border: 1px solid;
@@ -944,34 +950,34 @@ only screen and (min-device-width : 1366px) and (max-device-width : 1024px) and 
     table-layout: fixed;
     background: #fff;
   }
-  
+
   &__table-row {
     border-bottom: 1px solid;
-    
+
     th {
       padding: 1rem 1.3rem;
       font-size: .938rem;
       font-weight: 300;
       line-height: 1.313rem;
-      
+
       @media only screen and (orientation: portrait) and (max-device-width: 9in),
-             only screen and (orientation: landscape) and (max-device-width: 8in) {
-               padding: 1rem 0.3rem;
-             }
+      only screen and (orientation: landscape) and (max-device-width: 8in) {
+        padding: 1rem 0.3rem;
+      }
     }
-    
+
     td {
       padding: 1rem 1.3rem;
       font-size: .938rem;
       font-weight: 700;
       line-height: 1.313rem;
       text-align: center;
-      
+
       @media only screen and (orientation: portrait) and (max-device-width: 9in),
-             only screen and (orientation: landscape) and (max-device-width: 8in) {
-               padding: 1rem 0.3rem;
-             }
-      
+      only screen and (orientation: landscape) and (max-device-width: 8in) {
+        padding: 1rem 0.3rem;
+      }
+
       &:first-child {
         font-size: 1rem;
         font-weight: 600;
@@ -982,3 +988,12 @@ only screen and (min-device-width : 1366px) and (max-device-width : 1024px) and 
   }
 }
 // !price
+
+.widget__title {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.375rem;
+  color: #4f4f4f;
+}
