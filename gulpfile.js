@@ -93,6 +93,6 @@ gulp.task("assets", function () {
         .pipe(gulp.dest(FRONT_PATH+"../build/"));
 });
 
-gulp.task("build",["scripts", "styles", "assets"]);
+gulp.task("build",["scripts", "styles", "assets", "timepad_styles"]);
 
 gulp.task("default", ["build"]);

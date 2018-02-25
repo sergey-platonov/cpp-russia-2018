@@ -95,24 +95,26 @@ next to C++ these days.</p>';
     $TR['en']['tickets info'] = 'Great talks, useful workshops.<br>We also offer an option to attend us online.';
 
     $TR['ru']['tickets entry'] = 'Входной билет';
-    $TR['en']['tickets entry'] = 'Entry ticket';
-    $TR['ru']['tickets entry text'] = 'Даёт право на посещения основной программы конференции 20-21 апреля. Включает в себя питание (кофе-брейк, обед). После конференции Вам будут доступны записи всех докладов. Записи докладов будет доступна в течении двух месяцев.';
-    $TR['en']['tickets entry text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+    $TR['en']['tickets entry'] = 'Conference ticket';
 
     $TR['ru']['tickets master'] = 'Мастер-класс';
-    $TR['en']['tickets master'] = 'Master';
-    $TR['ru']['tickets master text'] = 'Даёт право на посещение одного мастер-класса 19 апреля по Вашему выбору. Включает в себя питание (кофе-брейк, обед).';
-    $TR['en']['tickets master text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+    $TR['en']['tickets master'] = 'Workshop';
 
     $TR['ru']['tickets online'] = 'Онлайн';
     $TR['en']['tickets online'] = 'Online';
-    $TR['ru']['tickets online text'] = 'Вы получаете ссылку, по которой сможете смотреть любой трек, по выбору. Записи докладов будет доступна в течении двух месяцев.';
-    $TR['en']['tickets online text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
 
-    $TR['ru']['tickets block'] = 'Block';
-    $TR['en']['tickets block'] = 'Block';
-    $TR['ru']['tickets block text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
-    $TR['en']['tickets block text'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, consectetur libero nihil excepturi nobis quisquam rerum labore, ipsa, non nam explicabo.';
+    $TR['ru']['tickets dinner'] = 'Ужин с докладчиками';
+    $TR['en']['tickets dinner'] = 'Social event';
+
+    $TR['ru']['tickets entry text']  = 'Посещение основной программы конференции 20-21 апреля';
+    $TR['ru']['tickets master text'] = 'Однодневный интенсив, практика, индивидуальная работа. Необходим ноутбук.';
+    $TR['ru']['tickets online text'] = 'Просмотр любого доклада. Записи докладов доступны в течении двух месяцев.';
+    $TR['ru']['tickets dinner text'] = 'Горячая пища и общение с докладчиками в неформальной обстановке';
+
+    $TR['en']['tickets entry text'] = 'Two days tickets for main program 20-21 April';
+    $TR['en']['tickets master text'] = 'One day intensive course: a lot of practise, personal work. A laptop is required.';
+    $TR['en']['tickets online text'] = 'You can watch any talk online. The videos will remain available for two months';
+    $TR['en']['tickets dinner text'] = 'A dinner with speakers and some other attendees';
 
     $TR['ru']['prices'] = 'Цены';
     $TR['en']['prices'] = 'Prices';

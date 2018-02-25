@@ -41,10 +41,10 @@
                 </div>
                 <div class="cpp-b_block-text">
                     <h3 class="cpp-b_block-text-title">
-                        <?php print tr('tickets block'); ?>
+                        <?php print tr('tickets dinner'); ?>
                     </h3>
                     <p>
-                        <?php print tr('tickets block text'); ?>
+                        <?php print tr('tickets dinner text'); ?>
                     </p>
                 </div>
             </div>

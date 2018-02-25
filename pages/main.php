@@ -26,22 +26,16 @@
 <!-- Доклады -->
 <section class="cpp-b_section gray-section talks-section">
     <div class="cpp-r_wrap">
+        <a name="talks" class="cpp-e_hash-link"></a>
+        <h2 class="cpp-e_block-title">
+            <?php print tr('talks') ?>
+        </h2>
+        <!--                <div class="cpp-b_block-text">-->
+        <!--                    --><?php //print tr('apply') ?>
+        <!--                </div>-->
+        <!--                <a class="bubble-link" href="mailto:talks@cpp-russia.ru">--><?php //print tr('apply bubble') ?><!--</a>-->
         <div class="cpp-b_talks cpp-b_responsive-row-cols">
-            <!-- -->
-            <div class="cpp-b_talks_description row-col">
-                <a name="talks" class="cpp-e_hash-link"></a>
-                <h2 class="cpp-e_block-title">
-                    <?php print tr('talks') ?>
-                </h2>
-                <div class="cpp-b_block-text">
-                    <?php print tr('apply') ?>
-                </div>
-                <a class="bubble-link" href="mailto:talks@cpp-russia.ru"><?php print tr('apply bubble') ?></a>
-            </div>
-            <!-- -->
-            <!-- -->
-            <?php renderFewTeasers(5)?>
-            <!-- -->
+            <?php renderFewTeasers(6)?>
         </div>
         <div class="cpp-b_content-centered">
             <a class="cpp-e_green-button" href="<?php echo $GLOBALS["prefix"] . "/talks" . lang_prefix()?>"><?php print tr('all talks') ?></a>
