@@ -1,0 +1,12 @@
+{
+  "speaker": {
+    "name": "Victor Ciura"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "TRACK A",
+    "time": "17:00 - 18:00",
+    "language": "english",
+    "title": "Enough string_view to hang ourselves"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "speaker": {
+    "name": "Вадим Винник"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "TRACK B",
+    "time": "17:00 - 18:00",
+    "language": "english",
+
+    "title": "Collection Processing. Single essence, multiple manifestations"
+  }
+}

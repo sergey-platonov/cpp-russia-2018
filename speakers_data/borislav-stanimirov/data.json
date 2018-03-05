@@ -1,0 +1,12 @@
+{
+  "speaker": {
+    "name": "Borislav Stanimirov"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "TRACK B",
+    "time": "12:45 - 13:45",
+    "language": "english",
+    "title": "DynaMix: A New Take on Polymorphism"
+  }
+}

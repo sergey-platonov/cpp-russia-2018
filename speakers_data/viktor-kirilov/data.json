@@ -1,0 +1,13 @@
+{
+  "speaker": {
+    "name": "Viktor Kirilov"
+  },
+  "talk": {
+    "date": "20/04/18",
+    "track": "TRACK B",
+    "time": "16:00 - 17:00",
+    "language": "english",
+
+    "title": "Interactive C++ Compilation (REPL): The Lean Way"
+  }
+}
