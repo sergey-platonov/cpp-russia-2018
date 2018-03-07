@@ -1,0 +1,1 @@
+Borislav has been a C++ programmer for 15 years. In the past 11 he has been programming video games. He has worked on C++ software for all kinds of platforms: desktops, mobile devices, servers, and browsers. His main interests are software architecture and design, programming languages, and open-source software.
