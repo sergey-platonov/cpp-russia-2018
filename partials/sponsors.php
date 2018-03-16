@@ -8,7 +8,7 @@
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->
             <div class="sponsor row-col">
-                <a href="https://www.think-cell.com/career/dev"><img src="/app/frontend/template/partners/think-cell_screen.png" alt="think-cell"></a>
+                <a href="https://www.think-cell.com/career/dev"><img src="/app/build/template/partners/think-cell_screen.png" alt="think-cell"></a>
             </div>
             <!-- -->
         </div>
@@ -25,51 +25,50 @@
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->
             <div class="sponsor row-col">
-                <a href="https://yandex.ru/company/"><img src="/app/frontend/template/partners/yandex_logo.png" alt=""></a>
+                <a href="https://yandex.ru/company/"><img src="/app/build/template/partners/yandex_logo.png" alt=""></a>
             </div>
             <!-- -->
             <!-- -->
             <div class="sponsor row-col">
-                <a href="https://www.jetbrains.com/"><img src="/app/frontend/template/partners/logo_JetBrains_CMYK-04.png" alt=""></a>
+                <a href="https://www.jetbrains.com/"><img src="/app/build/template/partners/logo_JetBrains_CMYK-04.png" alt=""></a>
             </div>
             <!-- -->
             <!-- -->
-            <!-- 
             <div class="sponsor row-col">
-                <a href="http://www.kaspersky.ru/"><img src="/app/frontend/template/partners/Kaspersky_RGB_POS_PNG.png" alt=""></a>
+                <a href="http://www.luxoft.ru/"><img src="/app/build/template/partners/LXFT_4_NB_New.png" alt=""></a>
+            </div>
+            <!-- -->
+            <!-- -->
+            <div class="sponsor row-col">
+                <a href="http://www.kaspersky.ru/"><img src="/app/build/template/partners/Kaspersky_RGB_POS_PNG.png" alt=""></a>
+            </div>
+            <!-- -->
+            <!-- -->
+
+            <!--
+            <div class="sponsor row-col">
+                <a href="http://opensoftdev.ru/"><img src="/app/build/template/partners/opensoft.png" alt=""></a>
             </div>
             -->
             <!-- -->
             <!-- -->
-            <div class="sponsor row-col">
-                <a href="http://www.luxoft.ru/"><img src="/app/frontend/template/partners/LXFT_4_NB_New.png" alt=""></a>
-            </div>
-            <!-- -->
-            <!-- -->
             <!--
             <div class="sponsor row-col">
-                <a href="http://opensoftdev.ru/"><img src="/app/frontend/template/partners/opensoft.png" alt=""></a>
-            </div>
-            -->
-            <!-- -->
-            <!-- -->
-            <!--
-            <div class="sponsor row-col">
-                <a href="https://jobs.aligntech.com/"><img src="/app/frontend/template/partners/logo_color_rgb_large.png" alt=""></a>
+                <a href="https://jobs.aligntech.com/"><img src="/app/build/template/partners/logo_color_rgb_large.png" alt=""></a>
             </div>
             -->
             <!-- -->
             <!-- -->
             <!---
             <div class="sponsor row-col">
-                <a href="https://www.artec3d.com/ru/"><img src="/app/frontend/template/partners/artec3d_black.svg" alt=""></a>
+                <a href="https://www.artec3d.com/ru/"><img src="/app/build/template/partners/artec3d_black.svg" alt=""></a>
             </div>
             -->
             <!-- -->
             <!-- -->
             <!--
             <div class="sponsor row-col">
-                <a href="https://www.juce.com/"><img src="/app/frontend/template/partners/JUCE Logo.png" alt=""></a>
+                <a href="https://www.juce.com/"><img src="/app/build/template/partners/JUCE Logo.png" alt=""></a>
             </div>
             -->
             <!-- -->
@@ -86,7 +85,7 @@
         <div class="cpp-b_sponsors cpp-b_responsive-row-cols">
             <!-- -->
             <div class="sponsor row-col">
-                <a href="http://www.viva64.com/en/pvs-studio/"><img src="/app/frontend/template/partners/unicorn.png" alt=""></a>
+                <a href="http://www.viva64.com/en/pvs-studio/"><img src="/app/build/template/partners/unicorn.png" alt=""></a>
             </div>
             <!-- -->
         </div>
@@ -103,16 +102,16 @@
             <!-- -->
             <!--
             <div class="sponsor row-col">
-                <a href="http://cppcon.org/"><img src="/app/frontend/template/partners/cpp.png" alt=""></a>
+                <a href="http://cppcon.org/"><img src="/app/build/template/partners/cpp.png" alt=""></a>
             </div>
             -->
             <!-- -->
             <!-- -->
             <div class="sponsor row-col">
-                <a href="http://corehard.by/"><img src="/app/frontend/template/partners/corehard-logo-community.png" alt=""></a>
+                <a href="http://corehard.by/"><img src="/app/build/template/partners/corehard-logo-community.png" alt=""></a>
             </div>
             <div class="sponsor row-col">
-                <a href="https://www.saratovit.ru/"><img src="/app/frontend/template/partners/sit_logo color.png" alt=""></a>
+                <a href="https://www.saratovit.ru/"><img src="/app/build/template/partners/sit_logo color.png" alt=""></a>
             </div>
             <!-- -->
         </div>
