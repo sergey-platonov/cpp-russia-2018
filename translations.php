@@ -109,12 +109,12 @@ next to C++ these days.</p>';
     $TR['ru']['tickets entry text']  = 'Посещение основной программы конференции 20-21 апреля';
     $TR['ru']['tickets master text'] = 'Однодневный интенсив, практика, индивидуальная работа. Необходим ноутбук.';
     $TR['ru']['tickets online text'] = 'Просмотр любого доклада. Записи докладов доступны в течении двух месяцев.';
-    $TR['ru']['tickets dinner text'] = 'Горячая пища и общение с докладчиками в неформальной обстановке';
+    $TR['ru']['tickets dinner text'] = 'Горячая пища и общение с докладчиками в неформальной обстановке. 20 апреля в 20.00';
 
     $TR['en']['tickets entry text'] = 'Two days tickets for main program 20-21 April';
     $TR['en']['tickets master text'] = 'One day intensive course: a lot of practise, personal work. A laptop is required.';
     $TR['en']['tickets online text'] = 'You can watch any talk online. The videos will remain available for two months';
-    $TR['en']['tickets dinner text'] = 'A dinner with speakers and some other attendees';
+    $TR['en']['tickets dinner text'] = 'A dinner with speakers and some other attendees, 20 April, 8 p.m.';
 
     $TR['ru']['prices'] = 'Цены';
     $TR['en']['prices'] = 'Prices';
