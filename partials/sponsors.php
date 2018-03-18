@@ -11,10 +11,16 @@
                 <a href="https://www.think-cell.com/career/dev"><img src="/app/build/template/partners/think-cell_screen.png" alt="think-cell"></a>
             </div>
             <!-- -->
+            <!-- -->
+            <div class="sponsor row-col">
+                <a href="http://www.kaspersky.ru/"><img src="/app/build/template/partners/Kaspersky_RGB_POS_PNG.png" alt=""></a>
+            </div>
+            <!-- -->
+
         </div>
     </div>
 </section>
-<!-- /Silver спонсоры -->
+<!-- /Platinum спонсоры -->
 
 <!-- Gold спонсоры -->
 <section class="cpp-b_section">
@@ -37,19 +43,11 @@
             <div class="sponsor row-col">
                 <a href="http://www.luxoft.ru/"><img src="/app/build/template/partners/LXFT_4_NB_New.png" alt=""></a>
             </div>
-            <!-- -->
-            <!-- -->
-            <div class="sponsor row-col">
-                <a href="http://www.kaspersky.ru/"><img src="/app/build/template/partners/Kaspersky_RGB_POS_PNG.png" alt=""></a>
-            </div>
-            <!-- -->
-            <!-- -->
+            <!-- --><!-- -->
 
-            <!--
             <div class="sponsor row-col">
-                <a href="http://opensoftdev.ru/"><img src="/app/build/template/partners/opensoft.png" alt=""></a>
+                <a href="https://iqoption.com/ru"><img src="/app/build/template/partners/iq-option.jpg" alt=""></a>
             </div>
-            -->
             <!-- -->
             <!-- -->
             <!--
