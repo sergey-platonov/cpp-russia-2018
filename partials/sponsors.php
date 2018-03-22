@@ -43,12 +43,18 @@
             <div class="sponsor row-col">
                 <a href="http://www.luxoft.ru/"><img src="/app/build/template/partners/LXFT_4_NB_New.png" alt=""></a>
             </div>
-            <!-- --><!-- -->
-
+            <!-- -->
+            <!-- -->
             <div class="sponsor row-col">
                 <a href="https://iqoption.com/ru"><img src="/app/build/template/partners/iq-option.jpg" alt=""></a>
             </div>
             <!-- -->
+            <!-- -->
+            <div class="sponsor row-col">
+                <a href="hhttp://nordigy.ru/"><img src="/app/build/template/partners/dins-color.png" alt=""></a>
+            </div>
+            <!-- -->
+
             <!-- -->
             <!--
             <div class="sponsor row-col">
