@@ -51,7 +51,7 @@
             <!-- -->
             <!-- -->
             <div class="sponsor row-col">
-                <a href="hhttp://nordigy.ru/"><img src="/app/build/template/partners/dins-color.png" alt=""></a>
+                <a href="http://dins.ru/"><img src="/app/build/template/partners/dins-color.png" alt=""></a>
             </div>
             <!-- -->
 
