@@ -4,7 +4,7 @@
   },
   "talk": {
     "date": "20/04/18",
-    "track": "Track A",
+    "track": "Track D",
     "time": "16:00 - 17:00",
     "title": "New in C++20: The spaceship operator (operator<=>)",
     "language": "english",
