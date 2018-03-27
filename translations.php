@@ -226,6 +226,9 @@ next to C++ these days.</p>';
     $TR['en']['talks about'] = '<p>Great guests from around the world, two days full of C++. If you applying for a talk, please, keep im mind that usual duration of a talk is 50 minutes</p>
 <p>We\'re glad to talks abot C++, STL, Boost, Qt, any other open source frameworks, testing and building C++ projects, concurrency, etc</p>';
 
+    $TR['ru']['soldout'] = '<br>(Билеты закончились)';
+    $TR['en']['soldout'] = '<br>(Sold Out)';
+
     $locale = get_locale();
     if ($TR[$locale][$text])
         return $TR[$locale][$text];

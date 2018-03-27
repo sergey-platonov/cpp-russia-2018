@@ -55,13 +55,13 @@ function getTalkInfo($dir)
     }
 }
 
-function getWorkshopTitle($prefix, $dir) 
+function getWorkshopTitle($prefix, $dir)
 {
     $speakerData = getSpeakerDataByDirName($dir);
     if (!$speakerData) {
 		return '';
     } else {
-        return '<a href="./'.$prefix.$dir.'">'.$speakerData->workshop->title.'</a>';
+        return '<a href="./' . $prefix . $dir . '">' . $speakerData->workshop->title . '</a>';
     }
 }
 

@@ -21,7 +21,7 @@
             <!-- Workshop prorgam table -->
             <?php 
               $ivanTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/ivan-cukic");
-              $rainerTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/rainer-grimm"); 
+              $rainerTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/rainer-grimm");
               $pavelTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/pavel-filonov");
               $antonTitle = getWorkshopTitle($GLOBALS["prefix"], "workshops/anton-polukhin");
             ?>
@@ -32,7 +32,7 @@
                     <th><?php echo $ivanTitle ?></th>
                     <th><?php echo $rainerTitle ?></th>
                     <th><?php echo $pavelTitle ?></th>
-                    <th><?php echo $antonTitle ?></th>
+                    <th><?php echo $antonTitle . tr('soldout') ?></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
