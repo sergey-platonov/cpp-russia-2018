@@ -114,10 +114,18 @@
             <div class="sponsor row-col">
                 <a href="http://corehard.by/"><img src="/app/build/template/partners/corehard-logo-community.png" alt=""></a>
             </div>
+            <!-- -->
+            <!-- -->
             <div class="sponsor row-col">
                 <a href="https://www.saratovit.ru/"><img src="/app/build/template/partners/sit_logo color.png" alt=""></a>
             </div>
             <!-- -->
+            <!-- -->
+            <div class="sponsor row-col">
+                <a href="http://www.eltech.ru"><img src="/app/build/template/partners/leti.png" alt=""></a>
+            </div>
+            <!-- -->
+
         </div>
     </div>
 </section>
