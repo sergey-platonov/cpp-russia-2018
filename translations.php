@@ -37,7 +37,7 @@ function tr($text) {
  The conference is for experienced developers!</p>';
 
     $TR['ru']['location'] = '<p>Место проведения: Санкт-Петербург, ул. Кораблестроителей, 14, гостиница Прибалтийская.</p>';
-    $TR['en']['location'] = '<p>Location: Saint Petersburg, Park Inn Pribalitiyskaya Hotel.</p>';
+    $TR['en']['location'] = '<p>Location: Saint Petersburg, Park Inn Pribaltiyskaya Hotel.</p>';
 
     $TR['ru']['community'] = '<p>В течении года сообщество проводит встречи в разных городах России: Москве, Санкт-Петербурге, 
 Новосибирске, Екатеринбурге, Нижнем Новгороде, Саратове.<br>На встречах выступают докладчики из разных городов и стран.</p>';
