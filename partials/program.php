@@ -29,10 +29,10 @@
                 <tbody>
                 <tr>
                     <th></th>
-                    <th><?php echo $ivanTitle ?></th>
-                    <th><?php echo $rainerTitle ?></th>
-                    <th><?php echo $pavelTitle ?></th>
-                    <th><?php echo $antonTitle . tr('soldout') ?></th>
+                    <th><?php echo $ivanTitle . tr('soldout')?></th>
+                    <th><?php echo $rainerTitle . tr('soldout')?></th>
+                    <th><?php echo $pavelTitle . tr('soldout')?></th>
+                    <th><?php echo $antonTitle . tr('soldout')?></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
