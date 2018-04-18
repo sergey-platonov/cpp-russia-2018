@@ -45,7 +45,7 @@ function tr($text) {
 Yekaterinburg, Nizhny Novgorod, Kazan, Tomsk and Saratov. We invite speakers from variety of cities and from other countries as well.</p>';
 
     $TR['ru']['keynotes'] = 'Открывать конференцию будет Jon Kalb, разработчик с 25-летним стажем<br>
-В течениеа этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
+В течение этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
 Yahoo и других компаниях. Jon -- организатор конференции CppCon. Автор книги <br>
 C++ Today: The Beast is Back.';
     $TR['en']['keynotes'] = 'Keynote speaker will be Jon Kalb, the C++ developer with 25-years of expirience.<br> 
