@@ -39,13 +39,13 @@ function tr($text) {
     $TR['ru']['location'] = '<p>Место проведения: Санкт-Петербург, ул. Кораблестроителей, 14, гостиница Прибалтийская.</p>';
     $TR['en']['location'] = '<p>Location: Saint Petersburg, Park Inn Pribaltiyskaya Hotel.</p>';
 
-    $TR['ru']['community'] = '<p>В течении года сообщество проводит встречи в разных городах России: Москве, Санкт-Петербурге, 
+    $TR['ru']['community'] = '<p>В течение года сообщество проводит встречи в разных городах России: Москве, Санкт-Петербурге, 
 Новосибирске, Екатеринбурге, Нижнем Новгороде, Саратове.<br>На встречах выступают докладчики из разных городов и стран.</p>';
     $TR['en']['community'] = '<p>So far we held conferences in several cities in Russia: Moscow, Saint-Petersburg, 
 Yekaterinburg, Nizhny Novgorod, Kazan, Tomsk and Saratov. We invite speakers from variety of cities and from other countries as well.</p>';
 
     $TR['ru']['keynotes'] = 'Открывать конференцию будет Jon Kalb, разработчик с 25-летним стажем<br>
-В течении этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
+В течениеа этого времени успел поработать в Amazon, Microsoft, Netscape,<br>
 Yahoo и других компаниях. Jon -- организатор конференции CppCon. Автор книги <br>
 C++ Today: The Beast is Back.';
     $TR['en']['keynotes'] = 'Keynote speaker will be Jon Kalb, the C++ developer with 25-years of expirience.<br> 
@@ -108,7 +108,7 @@ next to C++ these days.</p>';
 
     $TR['ru']['tickets entry text']  = 'Посещение основной программы конференции 20-21 апреля';
     $TR['ru']['tickets master text'] = 'Однодневный интенсив, практика, индивидуальная работа. Необходим ноутбук.';
-    $TR['ru']['tickets online text'] = 'Просмотр любого доклада. Записи докладов доступны в течении двух месяцев.';
+    $TR['ru']['tickets online text'] = 'Просмотр любого доклада. Записи докладов доступны в течение двух месяцев.';
     $TR['ru']['tickets dinner text'] = 'Горячая пища и общение с докладчиками в неформальной обстановке. 20 апреля в 20.00';
 
     $TR['en']['tickets entry text'] = 'Two days tickets for main program 20-21 April';
@@ -124,7 +124,7 @@ next to C++ these days.</p>';
 
     $TR['ru']['about schedule'] = 'Первый день конференции 19 апреля -- это день мастер-классов. Вы можете посетить один четыре мастер-классов на ваш выбор. 
     Обратите внимание: два мастер-класса проходят на английском языке. Мастер-класс это практическое занятие под руководством опытного программиста. Для работы
-    вам понадобится ноутбук, более подробные треования есть в описании каждого мастер-класса. На этот день продаётся отдельный билет.';
+    вам понадобится ноутбук, более подробные требования есть в описании каждого мастер-класса. На этот день продаётся отдельный билет.';
     $TR['en']['about schedule'] = ' ';
 
     $TR['ru']['more'] = 'Подробнее >>';
