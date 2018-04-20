@@ -8,3 +8,5 @@
 * как всё-таки написать слой абстракции поверх C-style API
 * как разобраться с колбеками, обработкой ошибок и управлением ресурсами, чтобы сделать традиционно сложный
  и запутанный код понятным даже для джуниора
+
+<iframe src="https://pro.ispringcloud.ru/acc/8gSlStAyNjA2/view/2606-Z1DE5-9FwBA-2ATgh/embedded?from=embed&amp;fit=1" border="0" scrolling="auto" allowtransparency="true" allowfullscreen="1" style="border: medium none; background-color: transparent; width: 800px; height: 520px;" frameborder="0"></iframe>
