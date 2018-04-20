@@ -140,6 +140,7 @@ function renderDay($schedule, $day)
 
 function renderMainProgram($projectRoot) 
 {
+    print '<a name="schedule" class="cpp-e_hash-link"></a>';
 	$data = getAllSpeakerData($projectRoot);
 	$schedule = $data["schedule"];
 	$days = array_keys($schedule);
