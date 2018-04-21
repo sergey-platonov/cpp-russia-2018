@@ -11,3 +11,5 @@
 Поэтому я не просто хочу рассказать, как мы делаем специализацию, но и попытаюсь переложить полученный опыт на повседневные задачи.
 
 <a href=http://cppconf.ru/talks/day-1/track-c/4.pptx>Slides in pptx</a>
+
+<iframe src="https://pro.ispringcloud.ru/acc/8gSlStAyNjA2/view/2606-rNc4X-i2Tax-LkJyd/embedded?from=embed&amp;fit=1" border="0" scrolling="auto" allowtransparency="true" allowfullscreen="1" style="border: medium none; background-color: transparent; width: 800px; height: 540px;" frameborder="0"></iframe>
