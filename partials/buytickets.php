@@ -49,10 +49,8 @@
                 </div>
             </div>
             <div class="buy-tickets-right row-col">
-                <?php
-                    $today = new DateTime("now");
-                ?>
               <!-- Таблица с ценами -->
+              <?php if (new DateTime("now") < new DateTime("2018-04-21")):?>
                 <div class="price">
                   <h2 class="price__title"><?php print tr('prices')?></h2>
                   <table class="price__table">
@@ -95,6 +93,7 @@
                     </tr>
                   </table>
                 </div>
+                <?php endif; ?>
                 <!-- /Таблица с ценами -->
                 <div class="cpp-b_only-desktop">
                     <h2 class="widget__title">

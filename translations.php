@@ -206,8 +206,8 @@ next to C++ these days.</p>';
     $TR['ru']['data-timepad-customized'] = '"3453"';
     $TR['en']['data-timepad-customized'] = '"3453"';
 
-    $TR['ru']['event-id'] = '593746';
-    $TR['en']['event-id'] = '665219';
+    $TR['ru']['event-id'] = '710376';
+    $TR['en']['event-id'] = '710376';
 
     $TR['ru']['platinum sponsors'] = 'Platinum спонсор';
     $TR['en']['platinum sponsors'] = 'Platinum sponsor';
