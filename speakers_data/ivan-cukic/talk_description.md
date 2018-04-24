@@ -3,3 +3,5 @@ C++ has always had a powerful meta-programming sub-language which allowed librar
 With the recent improvements to the standard, and with the features planned for C++20, meta-programming has become much easier, and meta-programs became easier to understand and reason about.
 
 In this talk, we will present a few modern techniques of meta-programming, with main focus on the magical void_t meta-function.
+
+<a href=http://cppconf.ru/talks/day-2/track-a/2.pdf>Slides in pdf</a>
