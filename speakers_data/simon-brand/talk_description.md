@@ -1,1 +1,3 @@
 Parallel programming can be used to take advantage of multi-core and heterogeneous architectures and can significantly increase the performance of software. Modern C++ has gone a long way to making parallel programming easier and more accessible; providing both high-level and low-level abstractions. C++17 takes this further by providing high level parallel algorithms, and much more is expected in C++20. This talk will give an overview of the current parallelism utilities available, and look to the future of how GPUs and heterogeneous systems can be supported through new standard library features and other standards like SYCL.
+
+<a href=http://cppconf.ru/talks/day-2/track-a/5.pdf>Slides in pdf</a>
