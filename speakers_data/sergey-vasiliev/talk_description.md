@@ -8,4 +8,4 @@
 
 Эти вопросы мы и обсудим в ходе доклада, а заодно поговорим о том, каким образом использовать статический анализ так, чтобы извлечь из него максимум пользы.
 
-<a href=http://cppconf.ru/talks/day-1/track-b/3.pptx>Slides in pptx</a>
+<a href=http://cppconf.ru/talks/day-1/track-c/3.pptx>Slides in pptx</a>
